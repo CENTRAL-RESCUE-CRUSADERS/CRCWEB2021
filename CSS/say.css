@@ -5,12 +5,16 @@
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
-    font-size: 40px;
+    padding: 2rem;
+    font-size: 1.2rem;
     text-align: center;
-    background: white;
+    background: rgba(247, 235, 235,.9);
   }
   
+  .main-interact {
+    padding: 1rem;
+    background:linear-gradient(0, rgb(255, 231, 95), rgb(243, 232, 167));
+  }
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   .leftcolumn {   
@@ -28,8 +32,13 @@
   
   
   /* Add a card effect */
-  .cards {
-     background-color: rgb(226, 224, 253);
+  .leftcolumn .cards {
+     background-color: rgba(226, 224, 253, 0.5);
+     padding: 20px;
+     margin-top: 1rem;
+  }
+  .rightcolumn .cards {
+     background-color: rgba(226, 224, 253, 0.9);
      padding: 20px;
      margin-top: 1rem;
   }
@@ -54,7 +63,7 @@
 }
 
   /* Clear floats after the columns */
-  .row:after {
+  .main-interact:after {
     content: "";
     display: table;
     clear: both;
@@ -62,7 +71,6 @@
   
   /* Footer */
   .footer {
-    padding: 20px;
     text-align: center;
   }
   
