@@ -1,83 +1,116 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  /* Header/Blog Title */
-  .header {
-    padding: 2rem;
-    font-size: 1.2rem;
-    text-align: center;
-    background: rgba(247, 235, 235,.9);
-  }
-  
-  .main-interact {
-    padding: 1rem;
-    background:linear-gradient(0, rgb(255, 231, 95), rgb(243, 232, 167));
-  }
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
- 
-  
-  
-  /* Add a card effect */
-  .leftcolumn .cards {
-     background-color: rgba(226, 224, 253, 0.5);
-     padding: 20px;
-     margin-top: 1rem;
-  }
-  .rightcolumn .cards {
-     background-color: rgba(226, 224, 253, 0.9);
-     padding: 20px;
-     margin-top: 1rem;
-  }
-  .cards h2 {
-    padding: 0 1rem;
-  }
-  .card {
-    background-color: rgb(234, 231, 238);
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  .card .title {
-    /* border: solid #444 1px; */
-    padding: .3rem;
-    border-radius: 10px;
-    background: rgb(87, 87, 243);
-    color: rgb(238, 237, 248);
-  }
-.card p {
-  padding-top: 0.5rem;
+  box-sizing: border-box;
 }
 
-  /* Clear floats after the columns */
-  .main-interact:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    text-align: center;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  }
+
+/* Header/Blog Title */
+.header {
+  padding: 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background: rgba(247, 235, 235,.9);
+}
+
+.main-interact {
+  padding: 1rem;
+  background:linear-gradient(0, rgb(255, 231, 95), rgb(243, 232, 167));
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+
+/* Add a card effect */
+.leftcolumn .cards {
+   background-color: rgba(226, 224, 253, 0.5);
+   padding: 20px;
+   margin-top: 1rem;
+}
+.rightcolumn .cards {
+   background-color: rgba(226, 224, 253, 0.9);
+   padding: 20px;
+   margin-top: 1rem;
+}
+.cards h2 {
+  padding: 0 1rem;
+}
+.card {
+  background-color: rgb(234, 231, 238);
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.card .title {
+  font-size: 1rem;
+  padding: .3rem;
+  border-radius: 10px;
+  background: rgb(87, 87, 243);
+  color: rgb(238, 237, 248);
+}
+.card p {
+padding-top: 0.5rem;
+}
+
+/* Clear floats after the columns */
+.main-interact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Quick links */
+.rightcolumn .quick-links {
+background-color: rgba(226, 224, 253, 0.1);
+text-align: center;
+}
+.rightcolumn .quick-links h3 {
+padding-bottom: 0.5rem;
+}
+.cards .q-links {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.cards .q-links button {
+outline: none;
+border: none;
+margin: 0.3rem;
+padding: .3rem;
+border-radius: 10px;
+background: rgb(87, 87, 243);
+color: rgb(238, 237, 248);
+/* font-size: 1rem; */
+}
+.cards .q-links button a {
+text-decoration: none;
+color: rgb(238, 237, 248);
+}
+.cards .q-links button:hover {
+background-color:rgb(32, 32, 186);
+cursor: pointer;
+}
+
+/* Footer */
+.footer {
+text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+}
+
+}
