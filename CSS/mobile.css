@@ -1,0 +1,46 @@
+
+@media(max-width: 800px) {
+    .main-header h1 {
+        padding: 0;
+    }
+    .nav .nav-items {
+        margin: 0 2%;
+    }
+    .nav ul li a, .nav ul li {
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0; 
+    }
+    .footer {
+        display: none;
+    }
+}
+
+/* login box */
+@media screen and (max-width: 800px){
+    .modal-content {
+        width: 90%;
+        margin-top: 10%;
+    }
+    .login-header .theme {
+        padding-top: 1rem;
+        line-height: 1.2rem;
+        width: 100%;
+        /* display: none; */
+    }
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/* login box */
+
+
