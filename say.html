@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>CRC | MU | MC</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CRC MU MC | Interact</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
 		crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/say.css">
+		<link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+
+		<!-- <script type="text/javascript" src="javascript/main.js"></script> -->
 	</head>
 
 	<body>
@@ -79,7 +85,7 @@
 			  <div class="cards quick-links">
 				<h3>Quick Links</h3>
 				<p class="q-links">
-					<button class="admin">Admin's Piece</button>
+					<button class="admin" onclick="document.getElementById('id01').style.display='block'">Admin's Piece</button>
 					<button class="inspiration">Inspiration Piece</button>
 					<button class="link"><a href="+254 796 664 504">Phone</a></button>
 					<button class="link"><a href="#">FaceBook</a></button>
@@ -88,9 +94,41 @@
 			  </div>
 			</div>
 		</div>
+		<!-- End of main page -->
+
+		<!-- log in  box -->
+		<div id="id01" class="login-modal">
+  
+			<form class="modal-content animate" action="" method="">
+			  <div class="login-header">
+				<div onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login-modal">&times;</div>
+				<div class="login-admin btn-1">Admin</div>
+				<div class="theme">Central Rescue Crusaders-MUCU MC Christ Our Firm Foundation</div>
+			  </div>
+		  
+			  <div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+		  
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+				  
+				<button type="submit"><b>Login</b></button>
+				<label>
+				  <input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			  </div>
+		  
+			  <div class="container">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			  </div>
+			</form>
+		  </div>
+		<!-- log in box -->
 		  
 
-		
+		<!-- Footer -->
 		<footer class="footer">
 			<div class="footer-container">
 				<div class="theme">
@@ -118,5 +156,15 @@
 		</footer>
 
 
+		<script>
+			var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
 	</body>
 </html>
