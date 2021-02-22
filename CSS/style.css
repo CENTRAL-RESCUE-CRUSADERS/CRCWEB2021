@@ -61,7 +61,7 @@
 /* End of navbar and the header */
 
 .container{
-	background-color: #fff;
+	/* background:url(../images/MOI\ logo.jpg)no-repeat center center/cover ; */
 	color: black;
 	padding:0 1.5rem;
     background:linear-gradient(0, rgba(255, 231, 95, 0.6) rgba(243, 232, 167, 0.6));
@@ -87,6 +87,7 @@ table{
 table:hover{
     margin:0;
     height:100%;
+    padding: 0;
 }
 
 table td{
@@ -95,15 +96,19 @@ table td{
     border-bottom:2px solid red;
     border-left:2px solid red ;
 }
+table td:nth-child(1) {
+    border-left:none ;
+
+ }
 table tr:hover{
+    padding: 0;
     cursor: pointer;
     width:50%;
-    font-weight: bold;
     background-color: black;
     color: white;
 }
 
-/* grids */
+/* grids for the gallery */
 .contain{
     width:100%;
     display: grid;
@@ -187,7 +192,7 @@ table tr:hover{
     padding: .5rem 0;
     font-size: 1.2rem;
     text-align: left;
-    display: none;
+    /* display: none; */
 }
 
 .footer ul {
@@ -242,29 +247,6 @@ table tr:hover{
 }
 
 /* Mobile footer */
-@media (max-width: 700px) {
-    .footer .theme {
-        font-size: 1.2rem;
-    }
-    .footer .contact {
-        padding: .5rem 0;
-        font-size: 1.2rem;
-        text-align: left;
-        display: block;
-    }
-    
-    .footer ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 5% 30%;
-            text-align: left;
-
-    }
-    
-    .footer ul .i {
-        display: none;
-      }
-}
 
 
 
@@ -273,11 +255,3 @@ table tr:hover{
 
 
 
-@keyframes scrolling{
-    0%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }
-}
