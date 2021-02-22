@@ -1,45 +1,12 @@
-@media(max-width:768px){
-    .footer .theme{
-        margin: 0;
-        padding: 0.2rem;
-        font-size: 0.8rem;
-    }
-    .footer .footer-container .list{
-        display:block;
-        margin: 0;
-        padding: 0.2rem;
-        font-size: 0.5rem;
-        text-align: left;
-
-    }
-    .footer .footer-container .list li{
-        width: 100%;
-        margin: 0;
-        padding: 0.2rem;
-        font-size: 0.8rem;
-    }
-    .footer .list .i {
-        display: none;
-      }
-      table{
-        width: 90%;
-        font-size: 0.8rem;
-        text-align: center;
-        overflow-x: hidden;
-    }
-    table td:nth-child(1) {
-        border-left:none ;
-
-     }
-     .footer .copy {
-        padding-top: 1rem;
-        color: rgb(21, 255, 0);
-        font-size:0.8rem;
-    }
-}
-
 /* with a small screen we remove the flex boxes and display block. also change the margins and padding. make sure the table fits in the container too. */
 @media (max-width:370px){
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
     .main h2{
         text-align: center;
         color: rgba(5, 7, 26, 0.842);
@@ -92,3 +59,79 @@
          border-bottom: none;
      } */
 }
+=======
+
+@media(max-width: 800px) {
+
+    .main-header h1 {
+        padding: 0;
+    }
+    .nav .nav-items {
+        margin: 0 2%;
+    }
+    .nav ul li a, .nav ul li {
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0; 
+    }
+    /* .footer {
+        display: none;
+    } */
+    .footer .theme{
+        margin: 0;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    .footer .footer-container .list{
+        display:block;
+        margin: 0;
+        padding: 0.2rem;
+        font-size: 0.5rem;
+        text-align: left;
+
+    }
+    .footer .footer-container .list li{
+        width: 100%;
+        margin: 0;
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    .footer .list .i {
+        display: none;
+      }
+      table{
+        width: 90%;
+        font-size: 0.8rem;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    table td:nth-child(1) {
+        border-left:none ;
+
+     }
+     .footer .copy {
+        padding-top: 1rem;
+        color: rgb(21, 255, 0);
+        font-size:0.8rem;
+    }
+}
+
+/* login box */
+@media screen and (max-width: 800px){
+    .modal-content {
+        width: 90%;
+        margin-top: 10%;
+    }
+    .login-header .theme {
+        padding-top: 1rem;
+        line-height: 1.2rem;
+        width: 100%;
+        /* display: none; */
+    }
+}
+
+
+>>>>>>> 7b9b88f9a30ac8283fcd6dad748e3ff89f8a3cfe

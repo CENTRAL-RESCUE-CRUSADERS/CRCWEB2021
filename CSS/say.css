@@ -2,6 +2,24 @@
   box-sizing: border-box;
 }
 
+/* Utilities */
+.btn-1 {
+  margin: 0.3rem;
+  padding: .3rem;
+  border-radius: 10px;
+  background: rgb(87, 87, 243);
+  color: rgb(238, 237, 248);
+  }
+a {
+  text-decoration: none;
+  /* color: rgb(238, 237, 248); */
+}
+.btn:hover {
+  background-color:rgb(32, 32, 186);
+  cursor: pointer;
+}
+/* end of utilities */
+
 
 /* Header/Blog Title */
 .header {
@@ -21,15 +39,12 @@
   float: left;
   width: 75%;
 }
-
 /* Right column */
 .rightcolumn {
   float: left;
   width: 25%;
   padding-left: 20px;
 }
-
-
 
 /* Add a card effect */
 .leftcolumn .cards {
@@ -90,7 +105,6 @@ padding: .3rem;
 border-radius: 10px;
 background: rgb(87, 87, 243);
 color: rgb(238, 237, 248);
-/* font-size: 1rem; */
 }
 .cards .q-links button a {
 text-decoration: none;
@@ -106,11 +120,133 @@ cursor: pointer;
 text-align: center;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
-.leftcolumn, .rightcolumn {   
+
+/* Login Box */
+input[type=text], input[type=password] {
   width: 100%;
-  padding: 0;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1rem;
+  background-color: rgba(250, 243, 243, 0);
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgba(250, 243, 243, 0.5);
 }
 
+/* Set a style for all buttons */
+.login-modal .modal-content button {
+  background-color: rgba(87, 87, 243, 0.7);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 25px;
 }
+
+.login-modal .modal-content button:hover {
+  background-color: rgba(87, 87, 243, 0.9);
+}
+
+/* Extra styles for the cancel button */
+.login-modal .modal-content .container .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgba(244, 67, 54, 0.7);
+}
+.login-modal .modal-content .container .cancelbtn:hover {
+  background-color: rgba(244, 67, 54, 0.9);
+}
+.login-modal .modal-content .container .login-admin {
+  width: auto;
+}
+
+.login-header {
+  text-align: center;
+  padding: 24px 0 12px 0;
+  position: relative;
+}
+
+.login-header .theme {
+  width: 100%;
+}
+
+.container {
+  padding: 16px;
+  background-color: rgba(250, 243, 243, 0);
+  font-size: 1rem;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.login-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(250, 243, 243, 0.9);
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: rgb(50, 49, 119);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.login-admin {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  background: rgb(50, 49, 119);
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/* End of login box */
