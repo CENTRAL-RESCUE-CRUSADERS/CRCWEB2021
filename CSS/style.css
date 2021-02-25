@@ -8,6 +8,7 @@
     /* overflow: auto; */
 }
 
+
 /* Header */
 .main-header{
 	text-align: center;
@@ -15,21 +16,19 @@
 	color:rgb(250, 248, 248);
     width: 100%;
     margin: auto; height: auto;
-    padding: 1.2rem;
+    padding: 1.2rem 0.1rem;
 
-}
-
-.main-header h1:hover {
-    background: #f02323;
 }
 
 /* Navbar */
 .nav{
-    background-color:blue;
+    background-color:rgba(0, 0, 255, 0.8);
     color:white;
     text-decoration:none;
     align-items:center;
     width:100%;
+    position: sticky;
+    top: 0;
 }
 .nav .nav-items {
     margin: 0% 20%;
@@ -39,9 +38,12 @@
 }
 .nav ul li {
     text-align: center;
-}
-.nav ul li,.nav ul li a{
     padding: 0.5rem;
+    width: 100%;
+}
+.nav ul li a{
+    padding: 0.5rem;
+    margin: 1rem;
     list-style: none;
     text-decoration:none;
     font-size: 1.2rem;    
@@ -61,7 +63,6 @@
 /* End of navbar and the header */
 
 .container{
-	/* background:url(../images/MOI\ logo.jpg)no-repeat center center/cover ; */
 	color: black;
 	padding:0 1.5rem;
     background:linear-gradient(0, rgba(255, 231, 95, 0.6) rgba(243, 232, 167, 0.6));
@@ -220,26 +221,6 @@ table tr:hover{
 .footer ul li i {
     padding: 0 0.2rem;
 }
-/* td a:hover .ph i, .fb i{
-    background: wheat;
-    color:#fff;
-} */
-
-/* .footer li i {
-    font-size: 20px;
-    padding-right: 3px;
-    color: #fff;
-}
-.yt i{
-    color: red;
-}
-.ph i, .fb i {
-    color: blue;
-    border-radius: 50%;
-    background: white;
-    padding-top: 3px;
-    padding-bottom: 3px;
-} */
 
 .footer .copy {
     padding-top: 1rem;
