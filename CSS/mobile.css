@@ -55,11 +55,20 @@
         border-left:none ;
 
      }
-     /* table tr:last-child{
-         border-bottom: none;
-     } */
+    }
+
+@media (max-width:768px) {
+    .footer .footer-container .list li{
+        display:block;
+        margin: 0;
+        font-size: 0.9rem;
+        border: none;
+        text-align: left;
+
+
+    }
+    
 }
-=======
 
 @media(max-width: 800px) {
 
@@ -77,9 +86,7 @@
       width: 100%;
       padding: 0; 
     }
-    /* .footer {
-        display: none;
-    } */
+  
     .footer .theme{
         margin: 0;
         padding: 0.2rem;
@@ -103,8 +110,8 @@
         display: none;
       }
       table{
-        width: 90%;
-        font-size: 0.8rem;
+        width: 100%;
+        font-size: 0.7rem;
         text-align: center;
         overflow-x: hidden;
     }
@@ -132,6 +139,3 @@
         /* display: none; */
     }
 }
-
-
->>>>>>> 7b9b88f9a30ac8283fcd6dad748e3ff89f8a3cfe
