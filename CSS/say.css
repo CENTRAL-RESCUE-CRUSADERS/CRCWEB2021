@@ -3,6 +3,7 @@
 }
 
 /* Utilities */
+
 .btn-1 {
   margin: 0.3rem;
   padding: .3rem;
@@ -12,7 +13,6 @@
   }
 a {
   text-decoration: none;
-  /* color: rgb(238, 237, 248); */
 }
 .btn:hover {
   background-color:rgb(32, 32, 186);
@@ -31,8 +31,9 @@ a {
 
 .main-interact {
   padding: 1rem;
-  background:linear-gradient(0, rgb(255, 231, 95), rgb(243, 232, 167));
+  background:linear-gradient(0, rgb(252, 245, 203), rgb(250, 248, 238));
 }
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
@@ -53,7 +54,7 @@ a {
    margin-top: 1rem;
 }
 .rightcolumn .cards {
-   background-color: rgba(226, 224, 253, 0.9);
+   background-color: rgba(226, 224, 253, 1);
    padding: 20px;
    margin-top: 1rem;
 }
@@ -61,13 +62,13 @@ a {
   padding: 0 1rem;
 }
 .card {
-  background-color: rgb(234, 231, 238);
+  background-color: rgb(231, 218, 248);
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .card .title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: .3rem;
   border-radius: 10px;
   background: rgb(87, 87, 243);
@@ -86,7 +87,7 @@ padding-top: 0.5rem;
 
 /* Quick links */
 .rightcolumn .quick-links {
-background-color: rgba(226, 224, 253, 0.1);
+background-color: rgba(226, 224, 253, 0.4);
 text-align: center;
 }
 .rightcolumn .quick-links h3 {
