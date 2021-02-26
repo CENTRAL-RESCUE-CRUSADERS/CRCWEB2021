@@ -5,7 +5,7 @@
 	text-decoration: none;
 	list-style: none;
     box-sizing: border-box;
-    /* overflow: auto; */
+    overflow-x: hidden;
 }
 
 
@@ -17,9 +17,17 @@
     width: 100%;
     margin: auto; height: auto;
     padding: 1.2rem 0.1rem;
-
+}
+.main-header .logo {
+    width: 100px;
+    float: left;
+    position: absolute;
+    left: 0%; top: 0%;
 }
 
+.main-header h1 {
+    padding-left: 100px;
+}
 /* Navbar */
 .nav{
     background-color:rgba(0, 0, 255, 0.8);
@@ -29,6 +37,7 @@
     width:100%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .nav .nav-items {
     margin: 0% 20%;
@@ -81,33 +90,64 @@
 }
 
 table{
-    width: 90%;
-    background-color: cyan;
-    border:2px solid red;
-}
-table:hover{
-    margin:0;
-    height:100%;
-    padding: 0;
+    width: 100%;
+    border: 1px solid rgb(198, 188, 255);
 }
 
-table td{
+table, tr, td {
+    border-collapse: collapse;
+}
+table tr td, tr th{
     text-transform: uppercase;
     text-align: left;
-    border-bottom:2px solid red;
-    border-left:2px solid red ;
+    padding: 0.5rem;
 }
-table td:nth-child(1) {
-    border-left:none ;
 
+table tr:nth-child(even) {
+    background: rgb(255, 255, 255);
  }
-table tr:hover{
-    padding: 0;
-    cursor: pointer;
-    width:50%;
-    background-color: black;
-    color: white;
+table tr:nth-child(odd) {
+    background-color: rgb(221, 219, 219);
+ }
+table tr:nth-child(even):hover {
+    background: rgba(217, 203, 243, 0.5);
+ }
+table tr:nth-child(odd):hover {
+    background-color: rgb(214, 214, 214);
+ }
+table tr:nth-child(1) {
+    background-color: rgb(214, 214, 214);
+ }
+ .container .main .aims li {
+    margin: 0.3rem 0;
 }
+.container .main .aims {
+    padding: 1rem;
+    background: rgb(247, 243, 243);
+}
+.container .main h2 {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    margin-bottom: 0;
+}
+.container .main ol li {
+    list-style-type: disc;
+    padding: 0.2rem 0;
+}
+.container .main .doctrinal {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background: rgb(247, 243, 243);
+}
+.container .main .doct {
+    color: #333;
+}
+.container .doctrinal li {
+    border-bottom: dotted 0.5px rgb(209, 207, 207);
+}
+
+
 
 /* grids for the gallery */
 .contain{
@@ -118,7 +158,6 @@ table tr:hover{
                    "1fr 1fr 1fr 1fr 1fr" 33.33vh
                    "1fr 1fr 1fr 1fr 1fr" 33.33vh;
     grid-gap: 5px;
-
 }
 
 .contain .box{
@@ -144,7 +183,7 @@ table tr:hover{
     object-fit: cover;
 }
 
-@media (max-width: 991px){
+/* @media (max-width: 991px){
     .container{
     grid-template:"1fr 1fr 1fr" 250px
                    "1fr 1fr 1fr" 250px
@@ -164,9 +203,9 @@ table tr:hover{
                    "1fr 1fr" 250px;
     }
     .contain .box.a{grid-row:span 1;
-}
+} */
 
-}
+/* } */
 /* end grids */
 
 /* Footer */
@@ -174,11 +213,9 @@ table tr:hover{
     padding: 20px;
     text-align: center;
 	background: #031321;
-    /* background: blue; */
 	color: white;
     display: block;
     align-items: center;
-	/* align-self: bottom; */
 }
 .footer .footer-container {
     margin: 0 10%;
@@ -193,7 +230,6 @@ table tr:hover{
     padding: .5rem 0;
     font-size: 1.2rem;
     text-align: left;
-    /* display: none; */
 }
 
 .footer ul {
@@ -217,6 +253,9 @@ table tr:hover{
 	display: inline;
 	font-size: 1.1rem;
     padding: 0.5rem 0;
+}
+.footer ul li i, .footer ul li a,.footer ul li {
+    overflow: hidden;
 }
 .footer ul li i {
     padding: 0 0.2rem;
