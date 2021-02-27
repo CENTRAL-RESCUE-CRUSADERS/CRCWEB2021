@@ -73,17 +73,25 @@
 
 @media(max-width: 800px) {
    
-    /* footer */
+    /* Navbar and header */
+    .main-header {
+        padding: 0.5rem 0;
+    }
     .main-header h1 {
-        padding: 0;
+        font-size: 1rem;
+        padding-left: 50px;
+    }
+    .main-header .logo {
+        width: 50px;
     }
     .nav .nav-items {
-        margin: 0 2%;
+        margin: 0 1%;
     }
     .nav ul li a, .nav ul li {
-        padding: 0.3rem;
-        font-size: 1rem;
+        padding: 0.3rem 0;
+        font-size: 0.8rem;
     }
+    /* end of nav */
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0; 
@@ -91,14 +99,14 @@
   
     .footer .theme{
         margin: 0;
-        padding: 0.2rem;
+        padding: 0.2rem 0;
         font-size: 0.8rem;
+        width: 100%;
     }
     .footer .footer-container .list{
         display:block;
         margin: 0;
         padding: 0.2rem;
-        font-size: 0.5rem;
         text-align: left;
 
     }
@@ -107,25 +115,51 @@
         margin: 0;
         padding: 0.2rem;
         font-size: 0.8rem;
+        border-bottom: dotted #555 1px;
+    }
+    .footer .footer-container .list li:hover {
+        background: #042441;
+    }
+    .footer .footer-container .list li i {
+        padding: 0 0.3rem;
     }
     .footer .list .i {
         display: none;
       }
-      table{
+    .footer .copy {
+            padding-top: 1rem;
+            color: rgb(162, 168, 213);
+            font-size:0.8rem;
+        }
+      /* body */
+    .container {
+        padding: 0 0.5rem;
+    }
+    table{
         width: 100%;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         text-align: center;
         overflow-x: hidden;
-    }
-    table td:nth-child(1) {
-        border-left:none ;
-
      }
-     .footer .copy {
-        padding-top: 1rem;
-        color: rgb(21, 255, 0);
-        font-size:0.8rem;
-    }
+     table tr td, tr th {
+         padding: 0.15rem;
+     }
+     .container .main {
+         font-size: 1rem;
+     }
+     .container .main h2 {
+         font-size: 1rem;
+         margin-top: 0.5;
+         margin-bottom: 0;
+     }
+     .container .main .aims {
+         padding: 0.2rem;
+     }
+     .container .main .doctrinal {
+         padding: 0.1rem;
+     }
+
+    
 }
 /* End of footer and index */
 
@@ -133,18 +167,6 @@
 /* interaction mobile page */
 /* login box */
 @media screen and (max-width: 800px){
-    
-    .header {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-    .nav .nav-items {
-        margin: 0 2%;
-    }
-    .nav ul li a, .nav ul li {
-        padding: 0.3rem;
-        font-size: 1rem;
-    }
     .main-interact {
         padding: 0;
     }
