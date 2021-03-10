@@ -72,6 +72,16 @@
 }
 
 @media(max-width: 800px) {
+    /* Utils */
+    .read {
+        display: inline;
+    }
+    .container .main .hide {
+        display: none;
+    }
+    .container .main .show {
+        display: inline;
+    }
    
     /* Navbar and header */
     .main-header {
@@ -91,7 +101,11 @@
         padding: 0.3rem 0;
         font-size: 0.8rem;
     }
+    .header {
+        margin: 0 0.1rem;
+    }
     /* end of nav */
+
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0; 
