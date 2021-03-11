@@ -9,6 +9,38 @@
 }
 
 
+/* Utils */
+
+.read {
+    display: none;
+}
+#small-screen {
+    display: none;
+}
+.hide {
+    display: none;
+}
+
+.read {
+    background: rgba(87, 87, 243, 0.1);
+    padding: 0.3rem;
+    padding-top: 0rem; 
+    padding-bottom: 0.05rem;
+    border-radius: 2px;
+    border-top-right-radius: 2rem;
+    color: rgb(62, 78, 94);
+  }
+  .read:hover {
+    cursor: pointer;
+    background: rgba(87, 87, 243, 0.3);
+  }
+  /* end of read more/less utils */
+
+  .main-container {
+    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.5), rgb(55, 43, 230,0.15));
+    backdrop-filter: blur(0.5rem);
+  }
+
 /* Header */
 .main-header{
 	text-align: center;
@@ -17,12 +49,14 @@
     width: 100%;
     margin: auto; height: auto;
     padding: 1.2rem 0.1rem;
+    position: relative;
 }
 .main-header .logo {
-    width: 100px;
+     width: 100px;
     float: left;
     position: absolute;
-    left: 0%; top: 0%;
+    display: none;
+    left: 0%; top: 0%; 
 }
 
 .main-header h1 {
@@ -37,7 +71,7 @@
     width:100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .nav .nav-items {
     margin: 0% 20%;
@@ -78,11 +112,34 @@
 	font-size: 20px;
 }
 
+.bg-image{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.95;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
 .main h2{
 	text-align: center;
-	color: rgba(5, 7, 26, 0.842);
+	color: rgba(48, 0, 0, 0.942);
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-bottom: 2px;
+}
+
+.main .welcome-intro {
+    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.8), rgba(184, 181, 218, 0.8));
+    margin-bottom: 1rem;
+}
+
+.main .intro {
+    padding: 1rem;
 }
 
 .main ol{
@@ -91,7 +148,8 @@
 
 table{
     width: 100%;
-    border: 1px solid rgb(198, 188, 255);
+    /* border: 0.5px solid rgb(198, 188, 255); */
+    border-radius: 10px;
 }
 
 table, tr, td {
@@ -104,26 +162,29 @@ table tr td, tr th{
 }
 
 table tr:nth-child(even) {
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.9);
  }
 table tr:nth-child(odd) {
-    background-color: rgb(221, 219, 219);
+    background-color: rgba(223, 220, 220, 0.9);
  }
 table tr:nth-child(even):hover {
-    background: rgba(217, 203, 243, 0.5);
+    background: rgba(255, 255, 255, 0.7);
  }
 table tr:nth-child(odd):hover {
-    background-color: rgb(214, 214, 214);
+    background-color: rgba(223, 220, 220, 0.7);
  }
 table tr:nth-child(1) {
-    background-color: rgb(214, 214, 214);
+    background-color: rgba(214, 214, 214, 0.85);
  }
+
+
  .container .main .aims li {
     margin: 0.3rem 0;
 }
 .container .main .aims {
     padding: 1rem;
-    background: rgb(247, 243, 243);
+    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.85), rgba(184, 181, 218, 0.85));
+    border-radius: 10px;
 }
 .container .main h2 {
     padding: 0.5rem;
@@ -135,16 +196,20 @@ table tr:nth-child(1) {
     list-style-type: disc;
     padding: 0.2rem 0;
 }
+.container .main .doct {
+    color: rgb(3, 0, 169);
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 0.5rem 0;
+}
 .container .main .doctrinal {
     padding: 0.5rem;
     margin-bottom: 1rem;
-    background: rgb(247, 243, 243);
-}
-.container .main .doct {
-    color: #333;
+    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.85), rgba(184, 181, 218, 0.85));
+    border-radius: 10px;
 }
 .container .doctrinal li {
-    border-bottom: dotted 0.5px rgb(209, 207, 207);
+    border-bottom: dotted 0.5px rgb(195, 193, 220);
 }
 
 
@@ -212,10 +277,11 @@ table tr:nth-child(1) {
 .footer {
     padding: 20px;
     text-align: center;
-	background: #031321;
+	background: rgba(3, 19, 33, 0.65);
 	color: white;
     display: block;
     align-items: center;
+    backdrop-filter: blur(1rem)
 }
 .footer .footer-container {
     margin: 0 10%;
@@ -263,7 +329,7 @@ table tr:nth-child(1) {
 
 .footer .copy {
     padding-top: 1rem;
-    color: #a4a8a8; 
+    color: #c1c3fc; 
 }
 
 /* Mobile footer */

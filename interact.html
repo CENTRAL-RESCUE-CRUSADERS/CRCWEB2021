@@ -17,10 +17,10 @@
 <!-- 		<script type="text/javascript" src="javascript/main.js"></script> -->
 	</head>
 
-	<body class="body">
-
-</head>
+<body class="body">
 	<body>
+		<img class="bg-image" src="images/MOI_logo.jpg" alt="logo">
+
 		<header class="main-header">
 			<img class="logo" src="images/MOI_logo.jpg" alt="Logo">
 			<h1><marquee>Central Rescue Crusaders-MUCU MC Christ Our Firm Foundation</marquee></h1>
@@ -42,6 +42,7 @@
 			<div class="leftcolumn">
 				<div class="cards">
 					<h2>ANNOUNCEMENTS</h2>
+					<!-- To show atleast 3 -->
 					<div class="card">
 						<small class="title"> Title description, 15 Jan 2021</small>
 						<p>Some text..</p>
@@ -52,8 +53,13 @@
 						<p>Some text..</p>
 						<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 					</div>
+					<div class="card">
+						<small class="title">Title description, 14 Jan 2021</small>
+						<p>Some text..</p>
+						<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					</div>
 				</div>
-				
+				<!-- To show atleast 2 -->
 				<div class="cards">
 					<h2>Inspirations/SODs</h2>
 					<div class="card">
@@ -76,16 +82,24 @@
 			  </div>
 			  <div class="cards">
 				<h3>Popular Post</h3>
-				<div class="fakeimg">Image/post 1</div><br>
-				<div class="fakeimg">Image/post 2</div><br>
-				<div class="fakeimg">Image/post 3</div>
+				<div class="fakeimg">Notifications</div><br>
+				<div class="fakeimg">Inspirations</div><br>
+				<div class="fakeimg">Families</div>
 			  </div>
 			  <div class="cards">
 				<h3>About Us</h3>
-				<p class="about">Some text.. Lorem ipsum, dolor sit amet consectetur 
-					adipisicing elit. Nemo odit ea, saepe quisquam at aliquid.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate 
-					facere necessitatibus numquam corrupti inventore laudantium vitae quasi vel accusamus omnis!
+				<p class="about">
+					Central Rescue Crusaders (CRC) is a body of Christian students and associates
+					from Nyandarua, Nyeri, Kirinyaga, Murang’a, Kiambu, Laikipia and Nairobi 
+					counties bound together by a common faith in the only God and joint together 
+					with the heavenly calling of Christ according to the Holy scriptures and IT
+					<span class="read more show" id="more"><small>Read more...</small></span> 
+					<span class="more-info hide">DECLARES that it shall be non-political, non-denominational, voluntal and 
+					non-partisan AND FURTHER DECLARES that no provision therein shall or will be 
+					construed as to qualify defeat or in any manner contravene the Holy Scriptures 
+					and such provision shall to the extent of contravention have no effect WITHOUT 
+					PREJUDICE to the foregoing</span>
+					<span class="read less hide" id="less"><small>See Less...</small></span>
 				</p>
 			  </div>
 			  <div class="cards quick-links">
@@ -93,12 +107,15 @@
 				<p class="q-links">
 					<button class="admin" onclick="document.getElementById('id01').style.display='block'">Admin's Piece</button>
 					<button class="inspiration">Inspiration Piece</button>
-					<button class="link"><a href="+254 796 664 504">Phone</a></button>
-					<button class="link"><a href="https://web.facebook.com/crc.moicu">FaceBook</a></button>
-					<button class="link"><a href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw">YouTube</a></button>
-					<button class="link"><a href="#">Email</a></button>
+					<button class="link"><a href="#">Phone</a></button>
+					<button class="link" id="large-screen"><a target="_blank" href="https://web.facebook.com/crc.moicu">FaceBook</a></button>
+					<button class="link" id="small-screen"><a target="_blank" href="fb://page/crc.moicu">FaceBook</a></button>
+					<button class="link"><a target="_blank" href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw">YouTube</a></button>
+					<button class="link"><a target="_blank" href="#">Email</a></button>
 					<button class="link"><a href="admin.html">Admin</a></button>
 			  </div>
+			  <!-- https://web.facebook.com/crc.moicu +254 796 664 504-->
+			  <!-- href="intent://8xn9iq3lG_w/#Intent;scheme=vnd.youtube;package=com.google.android.youtube;S.browser_fallback_url=market://details?id=com.google.android.youtube;end;" -->
 			</div>
 		</div>
 		<!-- End of main page -->
@@ -147,12 +164,12 @@
 				<ul class="list"> 
 					<li class="li ph"><a href="#"><i class="fa fa-phone fa-fs"></i> +254 796 664 504</a></li>
 					<span class="i"></span>
-					<li class="li fb"><a href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
+					<li class="li fb"><a id="large-screen" target="_blank" href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
+					<li class="li fb"><a id="small-screen" target="_blank" href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
 					<span class="i"></span>
 					<li class="li em"><a href="#"><i class="fa fa-envelope fa-fs"></i>moiunicrc@gmail.com</a></li>
 					<span class="i"></span>
-					<!-- <li class="li tw"><a href="#"><i class="fab fa-twitter fa-fs"></i>Twitter</a></li>
-					<span class="i"></span> -->
+					<!-- <li class="li tw"><a href="#"><i class="fab fa-twitter fa-fs"></i>Twitter</a></li> -->
 					<li class="li yt"><a href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw"><i class="fab fa-youtube fa-fs"></i>Central Rescue Crusaders</a></li>
 				</ul>
 				
@@ -162,16 +179,12 @@
 			</div>
 		</footer>
 
+		<!-- Link Javascript and JQuery Files -->
+		<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script> 
+        <script src="javascript/main.js"></script>
 
-		<script>
-			var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-				if (event.target == modal) {
-					modal.style.display = "none";
-				}
-			}
-		</script>
-	</body>
+</body>
 </html>
