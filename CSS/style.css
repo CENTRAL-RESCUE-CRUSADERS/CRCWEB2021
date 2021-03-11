@@ -55,6 +55,8 @@
      width: 100px;
     float: left;
     position: absolute;
+
+/*     display: none; */
     left: 0%; top: 0%; 
 }
 
