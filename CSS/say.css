@@ -73,9 +73,28 @@ a {
 }
 .rightcolumn .cards {
    background-color: rgba(226, 224, 253, 0.6);
-   padding: 20px;
+   padding: 15px;
    margin-top: 1rem;
    border-radius: 10px;
+}
+.rightcolumn .cards .event {
+  padding-top: 0.5rem;
+  border-bottom: 1px dotted #444;
+}
+.rightcolumn .cards .event:last-child {
+  border-bottom: none;
+}
+.rightcolumn .cards .event .title {
+  margin-bottom: 0.25rem;
+  width: fit-content;
+}
+.rightcolumn .cards .event .title small {
+  font-weight: 400;
+  color: #fff;
+}
+.rightcolumn .cards .event img {
+  float: left;
+  margin-right: 0.5rem;
 }
 .cards h2 {
   padding: 0 1rem;
@@ -86,12 +105,16 @@ a {
   padding: 1rem;
   margin-bottom: 1rem;
 }
-.card .title {
+.card .title, .event .title {
   font-size: 0.9rem;
-  padding: .3rem;
+  padding: .25rem;
   border-radius: 10px;
   background: rgb(87, 87, 243);
   color: rgb(238, 237, 248);
+  cursor: pointer;
+}
+.card .title:hover, .event .title:hover {
+  background: rgba(87, 87, 243, 0.8);
 }
 .card p {
 padding-top: 0.5rem;
@@ -221,6 +244,10 @@ input[type=text]:focus, input[type=password]:focus {
 
 .login-header .theme {
   width: 100%;
+  font-size: 1.2rem;
+}
+.login-header .login-admin {
+  cursor: pointer;
 }
 
 .container {
@@ -244,18 +271,17 @@ span.psw {
   width: 100%; 
   height: 100%; 
   overflow: hidden; 
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(1rem);
   padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: rgba(250, 243, 243, 0.9);
+  background:linear-gradient(to right bottom, rgba(209, 205, 205, 0.85), rgba(209, 200, 240, 0.6));
   margin: 5% auto 15% auto; 
-  border: 1px solid #888;
   width: 80%; 
-  /* backdrop-filter: blur(1rem) */
+  border-radius: 2rem;
 }
 
 /* The Close Button (x) */
