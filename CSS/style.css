@@ -14,7 +14,12 @@
 .read {
     display: none;
 }
-
+#small-screen {
+    display: none;
+}
+.hide {
+    display: none;
+}
 
 .read {
     background: rgba(87, 87, 243, 0.1);
@@ -44,12 +49,14 @@
     width: 100%;
     margin: auto; height: auto;
     padding: 1.2rem 0.1rem;
+    position: relative;
 }
 .main-header .logo {
-    width: 100px;
+     width: 100px;
     float: left;
     position: absolute;
-    left: 0%; top: 0%;
+    display: none;
+    left: 0%; top: 0%; 
 }
 
 .main-header h1 {
@@ -64,7 +71,7 @@
     width:100%;
     position: sticky;
     top: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .nav .nav-items {
     margin: 0% 20%;
@@ -202,7 +209,7 @@ table tr:nth-child(1) {
     border-radius: 10px;
 }
 .container .doctrinal li {
-    border-bottom: dotted 0.5px rgb(209, 207, 207);
+    border-bottom: dotted 0.5px rgb(195, 193, 220);
 }
 
 
