@@ -73,6 +73,12 @@
 
 @media(max-width: 800px) {
     /* Utils */
+    #large-screen {
+        display: none;
+    }
+    #small-screen {
+        display: inline;
+    }
     .read {
         display: inline;
     }
@@ -218,3 +224,27 @@
 
 /* end of interaction mobile page */
 
+/* Grids */
+/* @media (max-width: 991px){
+        .container{
+        grid-template:"1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px
+                        "1fr 1fr 1fr" 250px
+                       "1fr 1fr 1fr" 250px;
+        }
+    }
+    @media (max-width: 700px){
+        .contain{
+        grid-template:"1fr 1fr" 250px
+                       "1fr 1fr" 250px
+                       "1fr 1fr" 250px
+                        "1fr 1fr" 250px
+                       "1fr 1fr" 250px
+                        "1fr 1fr" 250px
+                       "1fr 1fr" 250px;
+        }
+        .contain .box.a{grid-row:span 1;
+    }
+    
+} */

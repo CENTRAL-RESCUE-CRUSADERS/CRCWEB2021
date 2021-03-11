@@ -7,6 +7,17 @@ window.onclick = function(event) {
     }
 }
 
+// scroll bar
+// window.addEventListener('scroll', function(){
+//     if (window.scrollY > 90){
+//         document.querySelector('#main-header').style.opacity = 0.9;
+//     }
+//     else {
+//         document.querySelector('#main-header').style.opacity = 1;
+//     }
+// });
+
+
 // Read more and See less syntax
 $(document).on('click','#more' , function(){
     $('.more-info').addClass('show');

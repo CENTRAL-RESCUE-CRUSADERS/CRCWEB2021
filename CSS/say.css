@@ -40,15 +40,15 @@ a {
   font-size: 1.2rem;
   text-align: center;
   background: rgba(247, 235, 235, .4);
-  backdrop-filter: blur(0.5rem);
-  /* margin: 0 20%; */
+  margin: 0 20%;
 }
 
 .main-interact {
   padding: 1rem;
   background:linear-gradient(0, 
-  rgba(252, 245, 203, 0.5), 
-  rgba(250, 248, 238, 0.7));
+  rgba(252, 245, 203, 0.1), 
+  rgba(250, 248, 238, 0.2));
+  backdrop-filter: blur(1rem)
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -66,16 +66,16 @@ a {
 
 /* Add a card effect */
 .leftcolumn .cards {
-   background-color: rgba(226, 224, 253, 0.4);
+   background-color: rgba(226, 224, 253, 0.6);
    padding: 20px;
    margin-top: 1rem;
-   backdrop-filter: blur(1rem)
+   border-radius: 10px;  
 }
 .rightcolumn .cards {
-   background-color: rgba(226, 224, 253, 0.4);
+   background-color: rgba(226, 224, 253, 0.6);
    padding: 20px;
    margin-top: 1rem;
-   backdrop-filter: blur(1rem)
+   border-radius: 10px;
 }
 .cards h2 {
   padding: 0 1rem;
@@ -123,6 +123,7 @@ padding-top: 0.5rem;
 /* End of read more and less */
 
 /* Clear floats after the columns */
+
 .main-interact:after {
   content: "";
   display: table;

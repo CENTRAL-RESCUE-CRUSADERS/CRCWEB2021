@@ -17,9 +17,7 @@
 <!-- 		<script type="text/javascript" src="javascript/main.js"></script> -->
 	</head>
 
-	<body class="body">
-
-</head>
+<body class="body">
 	<body>
 		<img class="bg-image" src="images/MOI_logo.jpg" alt="logo">
 
@@ -109,12 +107,15 @@
 				<p class="q-links">
 					<button class="admin" onclick="document.getElementById('id01').style.display='block'">Admin's Piece</button>
 					<button class="inspiration">Inspiration Piece</button>
-					<button class="link"><a href="+254 796 664 504">Phone</a></button>
-					<button class="link"><a href="https://web.facebook.com/crc.moicu">FaceBook</a></button>
-					<button class="link"><a href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw">YouTube</a></button>
-					<button class="link"><a href="#">Email</a></button>
+					<button class="link"><a href="#">Phone</a></button>
+					<button class="link" id="large-screen"><a target="_blank" href="https://web.facebook.com/crc.moicu">FaceBook</a></button>
+					<button class="link" id="small-screen"><a target="_blank" href="fb://page/crc.moicu">FaceBook</a></button>
+					<button class="link"><a target="_blank" href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw">YouTube</a></button>
+					<button class="link"><a target="_blank" href="#">Email</a></button>
 					<button class="link"><a href="admin.html">Admin</a></button>
 			  </div>
+			  <!-- https://web.facebook.com/crc.moicu +254 796 664 504-->
+			  <!-- href="intent://8xn9iq3lG_w/#Intent;scheme=vnd.youtube;package=com.google.android.youtube;S.browser_fallback_url=market://details?id=com.google.android.youtube;end;" -->
 			</div>
 		</div>
 		<!-- End of main page -->
@@ -163,12 +164,12 @@
 				<ul class="list"> 
 					<li class="li ph"><a href="#"><i class="fa fa-phone fa-fs"></i> +254 796 664 504</a></li>
 					<span class="i"></span>
-					<li class="li fb"><a href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
+					<li class="li fb"><a id="large-screen" target="_blank" href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
+					<li class="li fb"><a id="small-screen" target="_blank" href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
 					<span class="i"></span>
 					<li class="li em"><a href="#"><i class="fa fa-envelope fa-fs"></i>moiunicrc@gmail.com</a></li>
 					<span class="i"></span>
-					<!-- <li class="li tw"><a href="#"><i class="fab fa-twitter fa-fs"></i>Twitter</a></li>
-					<span class="i"></span> -->
+					<!-- <li class="li tw"><a href="#"><i class="fab fa-twitter fa-fs"></i>Twitter</a></li> -->
 					<li class="li yt"><a href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw"><i class="fab fa-youtube fa-fs"></i>Central Rescue Crusaders</a></li>
 				</ul>
 				
@@ -185,5 +186,5 @@
         crossorigin="anonymous"></script> 
         <script src="javascript/main.js"></script>
 
-	</body>
+</body>
 </html>
