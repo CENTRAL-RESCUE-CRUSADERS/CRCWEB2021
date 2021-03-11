@@ -71,7 +71,7 @@
     
 }
 
-@media(max-width: 800px) {
+@media(max-width: 850px) {
     /* Utils */
     #large-screen {
         display: none;
@@ -178,6 +178,7 @@
      .container .main .doctrinal {
          padding: 0.1rem;
      }
+
 
     
 }
