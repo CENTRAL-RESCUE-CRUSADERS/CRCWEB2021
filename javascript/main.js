@@ -7,16 +7,23 @@ window.onclick = function(event) {
     }
 }
 
-// scroll bar
-// window.addEventListener('scroll', function(){
-//     if (window.scrollY > 90){
-//         document.querySelector('#main-header').style.opacity = 0.9;
-//     }
-//     else {
-//         document.querySelector('#main-header').style.opacity = 1;
-//     }
-// });
+// sticky navbar
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var navi = document.getElementById("navi");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navi.classList.add("navi");
+    navi.classList.remove("nav-items");
+  } else {
+    navi.classList.remove("navi");
+    navi.classList.add("nav-items");
+  }
+}
+// sticky nav bar
 
 // Read more and See less syntax
 $(document).on('click','#more' , function(){
