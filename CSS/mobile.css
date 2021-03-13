@@ -104,8 +104,11 @@
         margin: 0 1%;
     }
     .nav ul li a, .nav ul li {
-        padding: 0.3rem 0;
-        font-size: 0.8rem;
+        padding: 0.4rem 0;
+        font-size: 0.9rem;
+    }
+    .nav .theme {
+        padding: 0.35rem 0rem;
     }
     .header {
         margin: 0 0.1rem;
