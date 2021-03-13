@@ -11,7 +11,6 @@ const fetchAnnouncements = async () => {
 		if (!resp.ok) {
 			throw data;
 		}
-		announcements.unshift(data.doc);
 	} catch (error) {}
 };
 
@@ -83,4 +82,7 @@ const showAnnouncements = () => {
 		</div>
 		`;
 	});
+
+	const container = document.querySelector('#recent-announcements');
+	container.innerHTML = output;
 };
