@@ -14,6 +14,7 @@
 
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/say.css">
+		<link rel="stylesheet" href="./CSS/admin.css">
 
 		<link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
 
@@ -31,7 +32,7 @@
 		<nav class="nav" id="navbar">
 			<ul class="nav-items" id="navi">
 				<li class="nav-item nc"><a href="index.html">HOME</a></li>
-				<li class="nav-item current"></i><a href="">INTERACT</a></li>
+				<li class="nav-item current"><a href="">INTERACT</a></li>
 				<li class="nav-item nc"><a href="gallery.html">CRC-GALLERY</a></li>
 				<div class="theme">
 					<marquee behavior="alternate" direction="right">Central Rescue Crusaders - MUCU MC Christ Our Firm Foundation</marquee>
@@ -45,24 +46,10 @@
 				<h2>WHAT IS NEW?</h2>
 			</div>
 			<div class="leftcolumn">
-				<div class="cards">
+				<div class="cards" id>
 					<h2>ANNOUNCEMENTS</h2>
 					<!-- To show atleast 3 -->
-					<div class="card">
-						<small class="title"> Title description, 15 Jan 2021</small>
-						<p>Some text..</p>
-						<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-					</div>
-					<div class="card">
-						<small class="title">Title description, 14 Jan 2021</small>
-						<p>Some text..</p>
-						<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-					</div>
-					<div class="card">
-						<small class="title">Title description, 14 Jan 2021</small>
-						<p>Some text..</p>
-						<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-					</div>
+					<div id="recent-announcements"></div>
 				</div>
 				<!-- To show atleast 2 -->
 				<div class="cards">
@@ -145,7 +132,7 @@
 		<!-- log in  box -->
 		<div id="id01" class="login-modal">
   
-			<form class="modal-content animate" action="" method="">
+			<form class="modal-content animate" id="login-form">
 			  <div class="login-header">
 				<div onclick="document.getElementById('id01').style.display='none'" class="close" title="Close login-modal">&times;</div>
 				<div class="login-admin btn-1">Admin</div>
@@ -153,11 +140,16 @@
 			  </div>
 		  
 			  <div class="container">
-				<label for="uname"><b>Username</b></label>
-				<input type="text" autocomplete="off" placeholder="Enter Username" name="uname" required>
+				  
+				</div>
+				
+				<label for="uname"><b>Email</b></label>
+				<input type="email" autocomplete="off" placeholder="Enter your email" name="uname" required id="email-input">
 		  
 				<label for="psw"><b>Password</b></label>
-				<input type="password" autocomplete="off" placeholder="Enter Password" name="psw" required>
+				<input type="password" autocomplete="off" placeholder="Enter Password" name="psw" required id="password-input">
+        
+        <div class="error-container">
 				  
 				<button type="submit"><b>Login</b></button>
 				<label>
@@ -169,6 +161,8 @@
 				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
 				<span class="psw">Forgot <a href="#">password?</a></span>
 			  </div>
+
+			 
 			</form>
 		  </div>
 		<!-- log in box -->
@@ -207,6 +201,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script> 
         <script src="javascript/main.js"></script>
-
+		<script src="./javascript/login.js"></script>
+		<script src="./javascript/interact.js"></script>
 </body>
 </html>

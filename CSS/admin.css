@@ -37,16 +37,16 @@ div.admin-card {
 	margin: 1rem 0;
 }
 
-.admin-card form {
+.admin-card form#announcements-form {
 	background: rgba(255, 255, 255, 0.8);
 	margin: 0 auto;
 	padding: 1.2rem;
 	height: 50vh;
 	border-radius: 1rem;
 	box-shadow: 0 0 24px 10px rgba(255, 255, 255, 0.4);
-	width: 60vw;
+	width: 70vw;
 	overflow: hidden;
-	height: 70vh;
+	min-height: 70vh;
 }
 
 .admin-card .input-group {
@@ -124,4 +124,63 @@ span#status {
 
 .success-text {
 	color: rgb(26, 209, 105);
+}
+
+#annoucement {
+	/* box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.1); */
+	width: 100%;
+	border-radius: 0.7rem;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.7);
+	min-height: auto;
+}
+
+#annoucement .title {
+	font-size: 0.8rem;
+	letter-spacing: 1.5px;
+	padding: 0.5rem 1.2rem;
+	border-radius: 50px;
+	margin: 1.5rem 0.5rem;
+}
+
+#annoucement .title-2 {
+	font-size: 1.1rem;
+	font-weight: 800;
+	letter-spacing: 1.6px;
+	margin: 0.5rem 0rem;
+}
+
+#actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+#edit,
+#delete {
+	font-size: 1.2rem;
+	margin: 1rem;
+	font-family: monospace;
+	cursor: pointer;
+}
+#edit {
+	color: rgb(4, 179, 85);
+}
+#delete {
+	color: crimson;
+}
+@media (max-width: 500px) {
+	.admin-card form#announcements-form {
+		width: 90vw;
+		height: max-content;
+	}
+
+	#announcements-form .flex__centre {
+		flex-direction: column-reverse;
+	}
+	.flex__centre button {
+		margin-top: 1rem;
+		width: 80%;
+	}
 }
