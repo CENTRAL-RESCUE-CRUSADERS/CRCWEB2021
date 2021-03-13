@@ -131,7 +131,7 @@ span#status {
 	width: 100%;
 	border-radius: 0.7rem;
 	border: none;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.7);
 	min-height: auto;
 }
 
@@ -150,6 +150,26 @@ span#status {
 	margin: 0.5rem 0rem;
 }
 
+#actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+#edit,
+#delete {
+	font-size: 1.2rem;
+	margin: 1rem;
+	font-family: monospace;
+	cursor: pointer;
+}
+#edit {
+	color: rgb(4, 179, 85);
+}
+#delete {
+	color: crimson;
+}
 @media (max-width: 500px) {
 	.admin-card form#announcements-form {
 		width: 90vw;
