@@ -43,6 +43,7 @@ const createAnnouncement = async (data) => {
 
 const myForm = document.getElementById('announcements-form');
 
+const insertAnnouncement = () => {};
 myForm.addEventListener('submit', function (e) {
 	e.preventDefault();
 	let title = document.getElementById('title').value;
@@ -84,7 +85,7 @@ const showAnnouncements = async () => {
 		output += `
 		<div class="card" id="annoucement">
 			<small class="title">${new Date(annoucement.createdAt).toDateString()}</small>
-			<p>${annoucement.title}</p>
+			<p class="title-2">${annoucement.title}</p>
 			<p>${annoucement.content}</p>
 		</div>
 		`;
