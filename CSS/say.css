@@ -307,7 +307,7 @@ span.psw {
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(1rem);
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
 /* Modal Content/Box */
