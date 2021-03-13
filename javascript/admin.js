@@ -65,6 +65,7 @@ myForm.addEventListener('submit', function (e) {
 				statusSpan.innerText = 'Announcement created successfully';
 				statusSpan.classList.add('success-text');
 				document.getElementById('resetBtn').click();
+				return showAnnouncements();
 			})
 			.catch((e) => {
 				console.log(e);
@@ -85,7 +86,7 @@ myForm.addEventListener('submit', function (e) {
 	}
 });
 
-const showAnnouncements = async () => {
+async function showAnnouncements() {
 	const newBatch = await fetchAnnouncements();
 	console.log(newBatch);
 	announcements.push(...newBatch);
