@@ -1,345 +1,390 @@
-*{
-	padding:0;
-	margin:0;
-	font-family:Arial, Helvetica, sans-serif;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	list-style: none;
-    box-sizing: border-box;
-    overflow-x: hidden;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
-
 
 /* Utils */
 
 .read {
-    display: none;
+	display: none;
 }
 #small-screen {
-    display: none;
+	display: none;
 }
 .hide {
-    display: none;
+	display: none;
 }
 
 .read {
-    background: rgba(87, 87, 243, 0.1);
-    padding: 0.3rem;
-    padding-top: 0rem; 
-    padding-bottom: 0.05rem;
-    border-radius: 2px;
-    border-top-right-radius: 2rem;
-    color: rgb(62, 78, 94);
-  }
-  .read:hover {
-    cursor: pointer;
-    background: rgba(87, 87, 243, 0.3);
-  }
-  /* end of read more/less utils */
+	background: rgba(87, 87, 243, 0.1);
+	padding: 0.3rem;
+	padding-top: 0rem;
+	padding-bottom: 0.05rem;
+	border-radius: 2px;
+	border-top-right-radius: 2rem;
+	color: rgb(62, 78, 94);
+}
+.read:hover {
+	cursor: pointer;
+	background: rgba(87, 87, 243, 0.3);
+}
+/* end of read more/less utils */
 
-  .main-container {
-    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.5), rgb(55, 43, 230,0.15));
-    backdrop-filter: blur(0.5rem);
-  }
+.main-container {
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.5),
+		rgb(55, 43, 230, 0.15)
+	);
+	backdrop-filter: blur(0.5rem);
+}
 
 /* Header */
-.main-header{
+.main-header {
 	text-align: center;
-	background-color:rgb(240, 8, 8);
-	color:rgb(250, 248, 248);
-    width: 100%;
-    margin: auto; height: auto;
-    padding: 1.2rem 0.1rem;
-    position: relative;
+	background-color: rgb(240, 8, 8);
+	color: rgb(250, 248, 248);
+	width: 100%;
+	margin: auto;
+	height: auto;
+	padding: 1.2rem 0.1rem;
+	position: relative;
 }
 .main-header .logo {
-     width: 100px;
-    float: left;
-    position: absolute;
+	width: 100px;
+	float: left;
+	position: absolute;
 
-/*     display: none; */
-    left: 0%; top: 0%; 
+	/*     display: none; */
+	left: 0%;
+	top: 0%;
 }
 
 .main-header h1 {
-    padding-left: 100px;
+	padding-left: 100px;
 }
 /* Navbar */
-.nav{
-    background-color:rgba(0, 0, 255, 0.8);
-    color:white;
-    text-decoration:none;
-    align-items:center;
-    width:100%;
-    position: sticky;
-    top: 0;
-    /* z-index: 1; */
+.nav {
+	background-color: rgba(0, 0, 255, 0.8);
+	color: white;
+	text-decoration: none;
+	align-items: center;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	/* z-index: 1; */
 }
 .nav .nav-items {
-    margin: 0% 20%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+	margin: 0% 20%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .nav ul li {
-    text-align: center;
-    padding: 0.5rem;
-    width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	width: 100%;
 }
-.nav ul li a{
-    padding: 0.5rem;
-    margin: 1rem;
-    list-style: none;
-    text-decoration:none;
-    font-size: 1.2rem;    
-    color:white;
-    width:100%;
-    display: inline;  
-    white-space: nowrap;  
+.nav ul li a {
+	padding: 0.5rem;
+	margin: 1rem;
+	list-style: none;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: white;
+	width: 100%;
+	display: inline;
+	white-space: nowrap;
 }
 
-.nav ul li:hover, .current{
-    background-color:rgb(32, 32, 186);
-    font-weight: bold;
+.nav ul li:hover,
+.current {
+	background-color: rgb(32, 32, 186);
+	font-weight: bold;
 }
-.nav ul li:hover,.nav ul li a {
-    color: rgb(219, 219, 235);
+.nav ul li:hover,
+.nav ul li a {
+	color: rgb(219, 219, 235);
 }
 /* End of navbar and the header */
 
-.container{
+.container {
 	color: black;
-	padding:0 1.5rem;
-    background:linear-gradient(0, rgba(255, 231, 95, 0.6) rgba(243, 232, 167, 0.6));
+	padding: 0 1.5rem;
+	background: linear-gradient(
+		0,
+		rgba(255, 231, 95, 0.6) rgba(243, 232, 167, 0.6)
+	);
 	font-size: 20px;
 }
 
-.bg-image{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    position: fixed;
-    opacity: 0.95;
-    z-index: -1;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.bg-image {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+	position: fixed;
+	opacity: 0.95;
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
-
-.main h2{
+.main h2 {
 	text-align: center;
 	color: rgba(48, 0, 0, 0.942);
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding-bottom: 2px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding-bottom: 2px;
 }
 
 .main .welcome-intro {
-    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.8), rgba(184, 181, 218, 0.8));
-    margin-bottom: 1rem;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.8),
+		rgba(184, 181, 218, 0.8)
+	);
+	margin-bottom: 1rem;
 }
 
 .main .intro {
-    padding: 1rem;
+	padding: 1rem;
 }
 
-.main ol{
+.main ol {
 	padding: 0 1.5rem;
 }
 
-table{
-    width: 100%;
-    /* border: 0.5px solid rgb(198, 188, 255); */
-    border-radius: 10px;
+table {
+	width: 100%;
+	/* border: 0.5px solid rgb(198, 188, 255); */
+	border-radius: 10px;
 }
 
-table, tr, td {
-    border-collapse: collapse;
+table,
+tr,
+td {
+	border-collapse: collapse;
 }
-table tr td, tr th{
-    text-transform: uppercase;
-    text-align: left;
-    padding: 0.5rem;
+table tr td,
+tr th {
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0.5rem;
 }
 
 table tr:nth-child(even) {
-    background: rgba(255, 255, 255, 0.9);
- }
+	background: rgba(255, 255, 255, 0.9);
+}
 table tr:nth-child(odd) {
-    background-color: rgba(223, 220, 220, 0.9);
- }
+	background-color: rgba(223, 220, 220, 0.9);
+}
 table tr:nth-child(even):hover {
-    background: rgba(255, 255, 255, 0.7);
- }
+	background: rgba(255, 255, 255, 0.7);
+}
 table tr:nth-child(odd):hover {
-    background-color: rgba(223, 220, 220, 0.7);
- }
+	background-color: rgba(223, 220, 220, 0.7);
+}
 table tr:nth-child(1) {
-    background-color: rgba(214, 214, 214, 0.85);
- }
+	background-color: rgba(214, 214, 214, 0.85);
+}
 
-
- .container .main .aims li {
-    margin: 0.3rem 0;
+.container .main .aims li {
+	margin: 0.3rem 0;
 }
 .container .main .aims {
-    padding: 1rem;
-    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.85), rgba(184, 181, 218, 0.85));
-    border-radius: 10px;
+	padding: 1rem;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.85),
+		rgba(184, 181, 218, 0.85)
+	);
+	border-radius: 10px;
 }
 .container .main h2 {
-    padding: 0.5rem;
-    font-size: 1.4rem;
-    margin: 1rem 0;
-    margin-bottom: 0;
+	padding: 0.5rem;
+	font-size: 1.4rem;
+	margin: 1rem 0;
+	margin-bottom: 0;
 }
 .container .main ol li {
-    list-style-type: disc;
-    padding: 0.2rem 0;
+	list-style-type: disc;
+	padding: 0.2rem 0;
 }
 .container .main .doct {
-    color: rgb(3, 0, 169);
-    font-weight: bold;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 0.5rem 0;
+	color: rgb(3, 0, 169);
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.6);
+	padding: 0.5rem 0;
 }
 .container .main .doctrinal {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.85), rgba(184, 181, 218, 0.85));
-    border-radius: 10px;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.85),
+		rgba(184, 181, 218, 0.85)
+	);
+	border-radius: 10px;
 }
 .container .doctrinal li {
-    border-bottom: dotted 0.5px rgb(195, 193, 220);
+	border-bottom: dotted 0.5px rgb(195, 193, 220);
 }
-
-
 
 /* grids for the gallery */
-.contain{
-    width:100%;
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template:"1fr 1fr 1fr 1fr 1fr" 34.33vh
-                   "1fr 1fr 1fr 1fr 1fr" 33.33vh
-                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
-    grid-gap: 5px;
+.contain {
+	width: 100%;
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template:
+		'1fr 1fr 1fr 1fr 1fr' 34.33vh
+		'1fr 1fr 1fr 1fr 1fr' 33.33vh
+		'1fr 1fr 1fr 1fr 1fr' 33.33vh;
+	grid-gap: 5px;
 }
 
-.contain .box{
-    position: relative;
-    background-color: #ccc;
+.contain .box {
+	position: relative;
+	background-color: #ccc;
 }
 
-.contain .box.a{
-    grid-row:span 2;
+.contain .box.a {
+	grid-row: span 2;
 }
 
-.contain .box.b, .contain .box.f, .contain .box.h, .contain .box.j
-{
-    grid-column:span 2;
+.contain .box.b,
+.contain .box.f,
+.contain .box.h,
+.contain .box.j {
+	grid-column: span 2;
 }
 
-.contain .box img,.contain .box iframe{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    object-fit: cover;
+.contain .box img,
+.contain .box iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-
-@media (max-width: 991px){
-    .container{
-    grid-template:"1fr 1fr 1fr" 250px
-                   "1fr 1fr 1fr" 250px
-                   "1fr 1fr 1fr" 250px
-                    "1fr 1fr 1fr" 250px
-                   "1fr 1fr 1fr" 250px;
-    }
+@media (max-width: 991px) {
+	.container {
+		grid-template:
+			'1fr 1fr 1fr' 250px
+			'1fr 1fr 1fr' 250px
+			'1fr 1fr 1fr' 250px
+			'1fr 1fr 1fr' 250px
+			'1fr 1fr 1fr' 250px;
+	}
 }
-@media (max-width: 700px){
-    .contain{
-    grid-template:"1fr 1fr" 250px
-                   "1fr 1fr" 250px
-                   "1fr 1fr" 250px
-                    "1fr 1fr" 250px
-                   "1fr 1fr" 250px
-                    "1fr 1fr" 250px
-                   "1fr 1fr" 250px;
-    }
-    .contain .box.a{grid-row:span 1;
-}
-
+@media (max-width: 700px) {
+	.contain {
+		grid-template:
+			'1fr 1fr' 250px
+			'1fr 1fr' 250px
+			'1fr 1fr' 250px
+			'1fr 1fr' 250px
+			'1fr 1fr' 250px
+			'1fr 1fr' 250px
+			'1fr 1fr' 250px;
+	}
+	.contain .box.a {
+		grid-row: span 1;
+	}
 }
 /* end grids */
 
 /* Footer */
 .footer {
-    padding: 20px;
-    text-align: center;
+	padding: 20px;
+	text-align: center;
 	background: rgba(3, 19, 33, 0.65);
 	color: white;
-    display: block;
-    align-items: center;
-    backdrop-filter: blur(1rem)
+	display: block;
+	align-items: center;
+	backdrop-filter: blur(1rem);
 }
 .footer .footer-container {
-    margin: 0 10%;
+	margin: 0 10%;
 }
 
 .footer .theme {
-    padding: .5rem 0;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
 }
 .footer .contact {
-    padding: .5rem 0;
-    font-size: 1.2rem;
-    text-align: left;
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
+	text-align: left;
 }
 
 .footer ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .footer ul .i {
-    border-left: dotted 1px #fff;
+	border-left: dotted 1px #fff;
 }
-.footer .list li:hover,.footer ul li a:hover {
-    color: rgb(181, 173, 255);
+.footer .list li:hover,
+.footer ul li a:hover {
+	color: rgb(181, 173, 255);
 }
 
-.footer ul li a{
+.footer ul li a {
 	text-decoration: none;
 	list-style: none;
-    color: #efefef;
+	color: #efefef;
 	display: inline;
 	font-size: 1.1rem;
-    padding: 0.5rem 0;
+	padding: 0.5rem 0;
 }
-.footer ul li i, .footer ul li a,.footer ul li {
-    overflow: hidden;
+.footer ul li i,
+.footer ul li a,
+.footer ul li {
+	overflow: hidden;
 }
 .footer ul li i {
-    padding: 0 0.2rem;
+	padding: 0 0.2rem;
 }
 
 .footer .copy {
-    padding-top: 1rem;
-    color: #c1c3fc; 
+	padding-top: 1rem;
+	color: #c1c3fc;
 }
 
 /* Mobile footer */
 
+/* Custom scrollbar */
 
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+}
 
-
-
-
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.8);
+}
