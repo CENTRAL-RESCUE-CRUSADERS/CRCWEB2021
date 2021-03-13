@@ -4,8 +4,12 @@
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	list-style: none;
+  
 	box-sizing: border-box;
 	overflow-x: hidden;
+
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 /* Utils */
@@ -43,10 +47,34 @@
 	);
 	backdrop-filter: blur(0.5rem);
 }
+    background: rgba(87, 87, 243, 0.1);
+    padding: 0.3rem;
+    padding-top: 0rem; 
+    padding-bottom: 0.05rem;
+    border-radius: 2px;
+    border-top-right-radius: 2rem;
+    color: rgb(62, 78, 94);
+  }
+  .read:hover {
+    cursor: pointer;
+    background: rgba(87, 87, 243, 0.3);
+  }
+.anime {
+    animation-timing-function: ease-in-out;
+    animation: mymove 2s infinite;
+}
+
+  /* end of read more/less utils */
+
+  .main-container {
+    background: linear-gradient(to right bottom, rgba(255, 255,255, 0.5), rgb(55, 43, 230,0.15));
+    backdrop-filter: blur(0.5rem);
+  }
 
 /* Header */
 .main-header {
 	text-align: center;
+
 	background-color: rgb(240, 8, 8);
 	color: rgb(250, 248, 248);
 	width: 100%;
@@ -63,12 +91,26 @@
 	/*     display: none; */
 	left: 0%;
 	top: 0%;
+
+	background-color:rgb(240, 8, 8);
+	color:rgb(250, 248, 248);
+    width: 100%;
+    margin: auto; height: auto;
+    padding: 1.2rem 0.1rem;
+}
+.main-header .logo {
+     width: 100px;
+    float: left;
+    position: absolute;
+    left: 0%; top: 0%; 
+
 }
 
 .main-header h1 {
 	padding-left: 100px;
 }
 /* Navbar */
+
 .nav {
 	background-color: rgba(0, 0, 255, 0.8);
 	color: white;
@@ -78,12 +120,31 @@
 	position: sticky;
 	top: 0;
 	/* z-index: 1; */
+
+.nav{
+    background-color:rgba(0, 0, 255, 0.85);
+    color:white;
+    text-decoration:none;
+    align-items:center;
+    width:100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 3;
+}
+.nav .theme {
+    padding: 0.5rem 0rem;
+    width: 100%;
+
 }
 .nav .nav-items {
 	margin: 0% 20%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+}
+.nav .nav-items .theme {
+    display: none;
 }
 .nav ul li {
 	text-align: center;
@@ -110,6 +171,27 @@
 .nav ul li:hover,
 .nav ul li a {
 	color: rgb(219, 219, 235);
+}
+
+/* sticky position */
+.nav .navi {
+    margin: 0% 0.01%;
+    display: flex;
+    flex-direction: row;
+}
+.nav .navi .nc {
+    display: none;
+}
+.nav .navi .current {
+    width: auto;
+    display: inline;
+    float: left;
+}
+.nav .navi .theme {
+    display: inline;
+    color: rgb(255, 220, 209);
+    font-weight: 550;
+    font-size: 1.2rem;
 }
 /* End of navbar and the header */
 
