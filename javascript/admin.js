@@ -11,7 +11,12 @@ const fetchAnnouncements = async () => {
 		if (!resp.ok) {
 			throw data;
 		}
-	} catch (error) {}
+
+		return data;
+	} catch (error) {
+		alert('Error loading annoucements');
+		console.log(error);
+	}
 };
 
 const createAnnouncement = async (data) => {
@@ -70,7 +75,9 @@ myForm.addEventListener('submit', function (e) {
 	}, 10000);
 });
 
-const showAnnouncements = () => {
+const showAnnouncements = async () => {
+	const announcements = await fetchAnnouncements();
+	console.log(announcements);
 	let output = '';
 
 	announcements.forEach((annoucement) => {
@@ -86,3 +93,5 @@ const showAnnouncements = () => {
 	const container = document.querySelector('#recent-announcements');
 	container.innerHTML = output;
 };
+
+showAnnouncements();
