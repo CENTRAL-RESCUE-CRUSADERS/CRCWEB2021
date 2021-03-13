@@ -34,14 +34,15 @@
     cursor: pointer;
     background: rgba(87, 87, 243, 0.3);
   }
-	background: rgba(87, 87, 243, 0.1);
+
+	/* background: rgba(87, 87, 243, 0.1);
 	padding: 0.3rem;
 	padding-top: 0rem;
 	padding-bottom: 0.05rem;
 	border-radius: 2px;
 	border-top-right-radius: 2rem;
 	color: rgb(62, 78, 94);
-}
+} */
 
 .anime {
 	animation-timing-function: ease-in-out;
@@ -115,6 +116,11 @@ h2 {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
+    z-index: 3;
+}
+.nav .theme {
+    padding: 0.5rem 0rem;
+    width: 100%;
 }
 .nav .nav-items {
 	margin: 0% 20%;
@@ -122,7 +128,9 @@ h2 {
 	justify-content: space-evenly;
 	align-items: center;
 }
-
+.nav .nav-items .theme {
+    display: none;
+}
 .nav ul li {
 	text-align: center;
 	padding: 0.5rem;
@@ -148,6 +156,26 @@ h2 {
 .nav ul li:hover,
 .nav ul li a {
 	color: rgb(219, 219, 235);
+}
+/* sticky position */
+.nav .navi {
+    margin: 0% 0.01%;
+    display: flex;
+    flex-direction: row;
+}
+.nav .navi .nc {
+    display: none;
+}
+.nav .navi .current {
+    width: auto;
+    display: inline;
+    float: left;
+}
+.nav .navi .theme {
+    display: inline;
+    color: rgb(255, 220, 209);
+    font-weight: 550;
+    font-size: 1.2rem;
 }
 
 /* End of navbar and the header */
