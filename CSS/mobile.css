@@ -110,6 +110,13 @@
     .nav .theme {
         padding: 0.35rem 0rem;
     }
+    .nav .navi .theme {
+        font-size: 0.8rem;
+    }
+    .nav .navi .current a {
+        margin: 0.2rem;
+        color: aqua;
+    }
     .header {
         margin: 0 0.1rem;
     }
@@ -146,7 +153,7 @@
     .footer .footer-container .list li:hover {
         background: #042441;
     }
-    .footer .footer-container .list .ph {
+    .footer .footer-container .list #large-screen {
         border: none;
     }
     .footer .footer-container .list li #large-screen {
