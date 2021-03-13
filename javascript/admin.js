@@ -11,7 +11,12 @@ const fetchAnnouncements = async () => {
 		if (!resp.ok) {
 			throw data;
 		}
-	} catch (error) {}
+
+		return data;
+	} catch (error) {
+		alert('Error loading annoucements');
+		console.log(error);
+	}
 };
 
 const createAnnouncement = async (data) => {
@@ -38,6 +43,7 @@ const createAnnouncement = async (data) => {
 
 const myForm = document.getElementById('announcements-form');
 
+const insertAnnouncement = () => {};
 myForm.addEventListener('submit', function (e) {
 	e.preventDefault();
 	let title = document.getElementById('title').value;
@@ -70,14 +76,16 @@ myForm.addEventListener('submit', function (e) {
 	}, 10000);
 });
 
-const showAnnouncements = () => {
+const showAnnouncements = async () => {
+	const announcements = await fetchAnnouncements();
+	console.log(announcements);
 	let output = '';
 
 	announcements.forEach((annoucement) => {
 		output += `
 		<div class="card" id="annoucement">
 			<small class="title">${new Date(annoucement.createdAt).toDateString()}</small>
-			<p>${annoucement.title}</p>
+			<p class="title-2">${annoucement.title}</p>
 			<p>${annoucement.content}</p>
 		</div>
 		`;
@@ -86,3 +94,5 @@ const showAnnouncements = () => {
 	const container = document.querySelector('#recent-announcements');
 	container.innerHTML = output;
 };
+
+showAnnouncements();
