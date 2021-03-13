@@ -1,5 +1,127 @@
 .container {
-   min-height: 70vh;
-   backdrop-filter: blur(1rem);
-   background: linear-gradient(to right top, rgba(255, 255,255, 0.4), rgba(138, 156, 255, 0.1));
+	min-height: 70vh;
+	backdrop-filter: blur(1rem);
+	background: linear-gradient(
+		to right top,
+		rgba(255, 255, 255, 0.4),
+		rgba(138, 156, 255, 0.1)
+	);
+}
+
+.welcome {
+	font-size: 1.2rem;
+	letter-spacing: 1.2px;
+	text-align: center;
+	margin: 0.6rem;
+}
+
+.welcome h3 {
+	font-size: 1.75rem;
+}
+
+.welcome p {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+div.admin-card {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.admin-card .title {
+	text-align: center;
+	font-size: 1.25rem;
+	letter-spacing: 1.2px;
+	margin: 1rem 0;
+}
+
+.admin-card form {
+	background: rgba(255, 255, 255, 0.8);
+	margin: 0 auto;
+	padding: 1.2rem;
+	height: 50vh;
+	border-radius: 1rem;
+	box-shadow: 0 0 24px 10px rgba(255, 255, 255, 0.4);
+	width: 60vw;
+	overflow: hidden;
+	height: 70vh;
+}
+
+.admin-card .input-group {
+	margin: 1.3rem 0;
+	overflow: hidden;
+}
+.admin-card form label {
+	font-size: 1.2rem;
+	display: block;
+	margin: 0.5px 0;
+}
+
+.admin-card form input {
+	border-radius: 12px;
+	padding: 0.7rem;
+	display: inline-block;
+	width: 100%;
+	outline: none;
+	overflow-y: scroll;
+}
+
+.admin-card form textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	border-radius: 12px;
+	outline: none;
+	font-size: 1.1rem;
+}
+
+.btn {
+	margin: 0 auto;
+	outline: none;
+	border: none;
+	background-color: slateblue;
+	padding: 1rem 2.5rem;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	box-shadow: 0 0 10px 8px #fff;
+	border-radius: 50px;
+	transition: all 0.2s ease;
+	font-family: monospace;
+}
+
+.btn:hover {
+	background-color: rgb(62, 41, 200);
+}
+
+.btn.secondary {
+	background-color: palevioletred;
+}
+
+.flex__centre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+span#status {
+	font-size: 0.8rem;
+	text-align: center;
+	letter-spacing: 1.1px;
+	margin: 2rem 0;
+}
+.error-text {
+	color: rgba(255, 0, 0, 0.829);
+}
+
+.success-text {
+	color: rgb(26, 209, 105);
 }
