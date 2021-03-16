@@ -1,123 +1,160 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Utilities */
 
 .btn-1 {
-  margin: 0.3rem;
-  padding: .3rem;
-  border-radius: 10px;
-  background: rgb(87, 87, 243);
-  color: rgb(238, 237, 248);
+	margin: 0.3rem;
+	padding: 0.3rem;
+	border-radius: 10px;
+	background: rgb(87, 87, 243);
+	color: rgb(238, 237, 248);
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 .btn:hover {
-  background-color:rgb(32, 32, 186);
-  cursor: pointer;
+	background-color: rgb(32, 32, 186);
+	cursor: pointer;
+}
+.main-interact h2 {
+  background: none;
+  /* background: -webkit-linear-gradient(#210070, #5E001F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 /* end of utilities */
 
 /* background image */
-.bg-image{
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  height: 100vh;
-  position: fixed;
-  opacity: 0.9;
-  z-index: -1;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.bg-image {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+	position: fixed;
+	opacity: 0.9;
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 /* Header/Title */
 .header {
-  padding: 2rem;
-  font-size: 1.2rem;
-  text-align: center;
-  background: rgba(247, 235, 235, .4);
-  margin: 0 20%;
+	padding: 2rem;
+	font-size: 1.2rem;
+	text-align: center;
+	background: rgba(247, 235, 235, 0.4);
+	margin: 0 20%;
 }
 
 .main-interact {
-  padding: 1rem;
-  background:linear-gradient(0, 
-  rgba(252, 245, 203, 0.1), 
-  rgba(250, 248, 238, 0.2));
-  backdrop-filter: blur(1rem)
+	padding: 1rem;
+	background: linear-gradient(
+		0,
+		rgba(252, 245, 203, 0.1),
+		rgba(250, 248, 238, 0.2)
+	);
+	backdrop-filter: blur(1rem);
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
+.leftcolumn {
+	float: left;
+	width: 70%;
 }
 /* Right column */
 .rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
+	float: left;
+	width: 30%;
+	padding-left: 20px;
 }
 
 /* Add a card effect */
 .leftcolumn .cards {
-   background-color: rgba(226, 224, 253, 0.6);
-   padding: 20px;
-   margin-top: 1rem;
-   border-radius: 10px;  
+	background-color: rgba(226, 224, 253, 0.6);
+	padding: 20px;
+	margin-top: 1rem;
+	border-radius: 10px;
 }
 .rightcolumn .cards {
-   background-color: rgba(226, 224, 253, 0.6);
-   padding: 20px;
-   margin-top: 1rem;
-   border-radius: 10px;
+	background-color: rgba(226, 224, 253, 0.6);
+	padding: 15px;
+	margin-top: 1rem;
+	border-radius: 10px;
+}
+.rightcolumn .cards .event {
+	padding: 0.5rem 0.2rem;
+	/* border-bottom: 1px dotted #444; */
+	min-height: 200px;
+	box-shadow: 0px 4px 4px rgba(138, 135, 135, 0.4);
+}
+.rightcolumn .cards .event:last-child {
+	border-bottom: none;
+}
+.rightcolumn .cards .event .title {
+	margin-bottom: 0.25rem;
+	width: fit-content;
+}
+.rightcolumn .cards .event .title small {
+	font-weight: 400;
+	color: #fff;
+}
+.rightcolumn .cards .event img {
+	float: left;
+	margin-right: 0.5rem;
 }
 .cards h2 {
-  padding: 0 1rem;
+	padding: 0 1rem;
 }
 .card {
-  background-color: rgba(231, 218, 248, 0.5);
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 1rem;
+	background-color: rgba(231, 218, 248, 0.5);
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
-.card .title {
-  font-size: 0.9rem;
-  padding: .3rem;
-  border-radius: 10px;
-  background: rgb(87, 87, 243);
-  color: rgb(238, 237, 248);
+.card .title,
+.event .title {
+	font-size: 0.9rem;
+	padding: 0.25rem;
+	border-radius: 10px;
+	background: rgb(87, 87, 243);
+	color: rgb(238, 237, 248);
+	cursor: pointer;
+}
+.card .title:hover,
+.event .title:hover {
+	background: rgba(87, 87, 243, 0.8);
 }
 .card p {
-padding-top: 0.5rem;
+	padding-top: 0.5rem;
 }
 .card .about {
-  display: block;
+	display: block;
+	overflow: hidden;
 }
 /* Cards, Read more and less syntax */
 .read {
-  background: rgba(87, 87, 243, 0.1);
-  padding: 0.3rem;
-  padding-top: 0rem; 
-  padding-bottom: 0.05rem;
-  border-radius: 2px;
-  border-top-right-radius: 2rem;
-  color: rgb(62, 78, 94);
+	background: rgba(87, 87, 243, 0.1);
+	padding: 0.3rem;
+	padding-top: 0rem;
+	padding-bottom: 0.05rem;
+	border-radius: 2px;
+	border-top-right-radius: 2rem;
+	color: rgb(62, 78, 94);
 }
 .read:hover {
-  cursor: pointer;
-  background: rgba(87, 87, 243, 0.3);
+	cursor: pointer;
+	background: rgba(87, 87, 243, 0.3);
 }
 .cards .about .hide {
-  display: none;
+	display: none;
 }
 .cards .about .show {
-  display: inline;
+	display: inline;
 }
 
 /* End of read more and less */
@@ -125,47 +162,46 @@ padding-top: 0.5rem;
 /* Clear floats after the columns */
 
 .main-interact:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: '';
+	display: table;
+	clear: both;
 }
 
 /* Quick links */
 .rightcolumn .quick-links {
-background-color: rgba(226, 224, 253, 0.4);
-text-align: center;
+	background-color: rgba(226, 224, 253, 0.4);
+	text-align: center;
 }
 .rightcolumn .quick-links h3 {
-padding-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 .cards .q-links {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 .cards .q-links button {
-outline: none;
-border: none;
-margin: 0.3rem;
-padding: .3rem;
-border-radius: 10px;
-background: rgb(87, 87, 243);
-color: rgb(238, 237, 248);
+	outline: none;
+	border: none;
+	margin: 0.3rem;
+	padding: 0.3rem;
+	border-radius: 10px;
+	background: rgb(87, 87, 243);
+	color: rgb(238, 237, 248);
 }
 .cards .q-links button a {
-text-decoration: none;
-color: rgb(238, 237, 248);
+	text-decoration: none;
+	color: rgb(238, 237, 248);
 }
 .cards .q-links button:hover {
-background-color:rgb(32, 32, 186);
-cursor: pointer;
+	background-color: rgb(32, 32, 186);
+	cursor: pointer;
 }
 
 /* Footer */
 .footer {
-text-align: center;
+	text-align: center;
 }
-
 
 /* Login Box */
 input[type=text], input[type=password] {
@@ -173,7 +209,8 @@ input[type=text], input[type=password] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
   box-sizing: border-box;
   outline: none;
   font-size: 1rem;
@@ -183,117 +220,157 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: rgba(250, 243, 243, 0.5);
 }
 
+input[type='email'],
+input[type='password'] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 1rem;
+	background-color: rgba(250, 243, 243, 0);
+}
+input[type='email']:focus,
+input[type='password']:focus {
+	background-color: rgba(250, 243, 243, 0.5);
+}
+
 /* Set a style for all buttons */
 .login-modal .modal-content button {
-  background-color: rgba(87, 87, 243, 0.7);
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 25px;
+	background-color: rgba(87, 87, 243, 0.7);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 25px;
 }
 
 .login-modal .modal-content button:hover {
-  background-color: rgba(87, 87, 243, 0.9);
+	background-color: rgba(87, 87, 243, 0.9);
 }
 
 /* Extra styles for the cancel button */
 .login-modal .modal-content .container .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: rgba(244, 67, 54, 0.7);
+	width: auto;
+	padding: 10px 18px;
+	background-color: rgba(244, 67, 54, 0.7);
 }
 .login-modal .modal-content .container .cancelbtn:hover {
-  background-color: rgba(244, 67, 54, 0.9);
+	background-color: rgba(244, 67, 54, 0.9);
 }
 .login-modal .modal-content .container .login-admin {
-  width: auto;
+	width: auto;
 }
 
 .login-header {
-  text-align: center;
-  padding: 24px 0 12px 0;
-  position: relative;
+	text-align: center;
+	padding: 24px 0 12px 0;
+	position: relative;
 }
 
 .login-header .theme {
-  width: 100%;
+	width: 100%;
+	font-size: 1.2rem;
+}
+.login-header .login-admin {
+	cursor: pointer;
 }
 
 .container {
-  padding: 16px;
-  background-color: rgba(250, 243, 243, 0);
-  font-size: 1rem;
+	padding: 16px;
+	background-color: rgba(250, 243, 243, 0);
+	font-size: 1rem;
 }
 
 span.psw {
   float: right;
   padding-top: 16px;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+
 }
 
 /* The Modal (background) */
 .login-modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden; 
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
-  padding-top: 60px;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(1rem);
+	padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: rgba(250, 243, 243, 0.9);
-  margin: 5% auto 15% auto; 
-  border: 1px solid #888;
-  width: 80%; 
-  /* backdrop-filter: blur(1rem) */
+	background: linear-gradient(
+		to right bottom,
+		rgba(209, 205, 205, 0.85),
+		rgba(209, 200, 240, 0.6)
+	);
+	margin: 5% auto 15% auto;
+	width: 80%;
+	border-radius: 2rem;
 }
 
 /* The Close Button (x) */
 .close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: rgb(50, 49, 119);
-  font-size: 2.5rem;
-  font-weight: bold;
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: rgb(50, 49, 119);
+	font-size: 2.5rem;
+	font-weight: bold;
 }
 .login-admin {
-  position: absolute;
-  left: 25px;
-  top: 0;
-  background: rgb(50, 49, 119);
-  font-weight: bold;
+	position: absolute;
+	left: 25px;
+	top: 0;
+	background: rgb(50, 49, 119);
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: red;
-  cursor: pointer;
+	color: red;
+	cursor: pointer;
 }
 
 /* Add Zoom Animation */
 .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s;
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+	}
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 /* End of login box */
+
+.error-container {
+	text-align: center;
+	color: crimson;
+}
