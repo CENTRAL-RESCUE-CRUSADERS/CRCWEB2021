@@ -21,11 +21,13 @@ function myFunction() {
     navi.classList.remove("nav-items");
     theme.classList.remove("theme-hide");
     theme.classList.add("theme-show");
+    navbar.classList.add("navt");
   } else {
     navi.classList.remove("navi");
     navi.classList.add("nav-items");
     theme.classList.add("theme-hide");
     theme.classList.remove("theme-show");
+    navbar.classList.remove("navt");
   }
 }
 // sticky nav bar
