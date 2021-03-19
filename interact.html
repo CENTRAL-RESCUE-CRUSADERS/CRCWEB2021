@@ -17,6 +17,8 @@
 		<link rel="stylesheet" href="./CSS/admin.css">
 
 		<link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+		<link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/humburger.css">
+
 
 <!-- 		<script type="text/javascript" src="javascript/main.js"></script> -->
 	</head>
@@ -29,15 +31,22 @@
 			<img class="logo" src="images/MOI_logo.jpg" alt="Logo">
 			<h1><marquee>Central Rescue Crusaders-MUCU MC Christ Our Firm Foundation</marquee></h1>
 		</header>
-		<nav class="nav" id="navbar">
-			<ul class="nav-items" id="navi">
-				<li class="nav-item nc"><a href="index.html">HOME</a></li>
-				<li class="nav-item current"><a href="">INTERACT</a></li>
-				<li class="nav-item nc"><a href="gallery.html">CRC-GALLERY</a></li>
-				<div class="theme">
-					<marquee scrollamount="4" behavior="alternate" direction="right" scrolldelay=200>Central Rescue Crusaders - MUCU MC Christ Our Firm Foundation</marquee>
-				</div>
-			</ul>
+		<nav class="nav menu-wrap" id="navbar">
+			<input type="checkbox" class="toggler">
+			<div class="hamburger"><div></div></div>
+			<div class="menu">
+				<div><div>
+				<ul class="nav-items" id="navi">
+					<li class="nav-item nc"><a href="index.html">HOME</a></li>
+					<li class="nav-item current"><a href="">INTERACT</a></li>
+					<li class="nav-item nc"><a href="gallery.html">CRC-GALLERY</a></li>
+					<li class="nav-item nc"><a href="#">CONTACT US</a></li>
+				</ul>
+				</div></div>
+			</div>
+			<div class="theme theme-hide" id="theme">
+				<marquee scrollamount="4" behavior="alternate" direction="right" >Central Rescue Crusaders - MUCU MC Christ Our Firm Foundation</marquee>
+			</div>
 		</nav>
 
 		<!-- Main Body -->
