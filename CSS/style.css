@@ -21,6 +21,12 @@
 #large-screen {
 	display: inline;
 }
+.theme-show {
+	display: block;
+}
+.theme-hide {
+	display: none;
+}
 
 
 .read {
@@ -112,7 +118,10 @@ h2 {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
-    z-index: 3;
+    z-index: 2;
+}
+.nav .toggler {
+	display: none;
 }
 .nav .theme {
     padding: 0.5rem 0rem;
@@ -167,11 +176,13 @@ h2 {
     display: inline;
     float: left;
 }
-.nav .navi .theme {
+.nav .theme-show {
     display: inline;
     color: rgb(255, 220, 209);
     font-weight: 550;
     font-size: 1.2rem;
+	text-align: center;
+	/* float: right; */
 }
 
 /* End of navbar and the header */
