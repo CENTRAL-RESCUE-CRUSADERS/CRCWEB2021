@@ -203,7 +203,7 @@ a {
 	text-align: center;
 }
 
-/* Login Box */
+/* -------------------------- Login Box --------------------------  */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -281,10 +281,11 @@ input[type='password']:focus {
 	cursor: pointer;
 }
 
-.container {
+.login-modal .container {
 	padding: 16px;
 	background-color: rgba(250, 243, 243, 0);
 	font-size: 1rem;
+	padding-bottom: 0rem;
 }
 
 span.psw {
@@ -306,7 +307,7 @@ span.psw {
 	height: 100%;
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(1rem);
+	backdrop-filter: blur(0.8rem);
 	padding-top: 50px;
 }
 
@@ -319,6 +320,7 @@ span.psw {
 	);
 	margin: 5% auto 15% auto;
 	width: 80%;
+	height: auto;
 	border-radius: 2rem;
 }
 

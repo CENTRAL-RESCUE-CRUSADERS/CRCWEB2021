@@ -13,6 +13,8 @@
 		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
 		crossorigin="anonymous">
 		<link rel="stylesheet" media="(max-width:768px)" href="CSS/mobile.css">
+		<link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/humburger.css">
+
 </head>
 <body>
 	<!-- Header and nav-bar -->
@@ -20,7 +22,24 @@
 		<img class="logo" src="images/MOI_logo.jpg" alt="Logo">
 		<h1 ><marquee>Central Rescue Crusaders-MUCU MC Christ Our Firm Foundation</marquee></h1>
 	</header>
-	<nav class="nav" id="navbar">
+	<nav class="nav menu-wrap" id="navbar">
+		<input type="checkbox" class="toggler">
+		<div class="hamburger"><div></div></div>
+		<div class="menu">
+			<div><div>
+			<ul class="nav-items" id="navi">
+				<li class="nav-item nc"><a href="index.html">HOME</a></li>
+				<li class="nav-item nc"></i><a href="interact.html">INTERACT</a></li>
+				<li class="nav-item current"><a href="">CRC-GALLERY</a></li>
+				<li class="nav-item nc"><a href="#">CONTACT US</a></li>
+			</ul>
+			</div></div>
+		</div>
+		<div class="theme theme-hide" id="theme">
+			<marquee scrollamount="4" behavior="alternate" direction="right" >Central Rescue Crusaders - MUCU MC Christ Our Firm Foundation</marquee>
+		</div>
+	</nav>
+	<!-- <nav class="nav" id="navbar">
 		<ul class="nav-items" id="navi">
 			<li class="nav-item nc"><a href="index.html">HOME</a></li>
 			<li class="nav-item nc"></i><a href="interact.html">INTERACT</a></li>
@@ -29,7 +48,7 @@
 				<marquee  scrollamount="4" behavior="alternate" direction="right">Central Rescue Crusaders - MUCU MC Christ Our Firm Foundation</marquee>
 			</div>
 		</ul>
-	</nav>
+	</nav> -->
 	<!-- End of navbar and header -->
 
 <div class="contain">
@@ -221,6 +240,14 @@
 		</div>
 	</footer>
 
+	<!-- Link Javascript and JQuery Files -->
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script> 
+	<script src="javascript/main.js"></script>
+	<script src="./javascript/login.js"></script>
+	<script src="./javascript/interact.js"></script>
 
 </body>
 </html>
