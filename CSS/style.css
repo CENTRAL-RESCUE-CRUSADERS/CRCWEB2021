@@ -329,6 +329,137 @@ table tr:nth-child(1) {
 	border-bottom: dotted 0.5px rgb(195, 193, 220);
 }
 
+/* click here paragraph in index.html */
+
+.pp{
+	padding-top: 1.9rem;
+	font-family: consolas;
+	color: rgb(19, 17, 16);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pp a{
+	background-color: #031321;
+	color: #5df321;
+	font-size: 1.5rem;
+	transition: 0.2s;
+	position: relative;
+	display: inline-block;
+	padding: 0.8rem 1.6rem;
+	letter-spacing: 0.25rem;
+	overflow: hidden;
+}
+
+.pp a:hover
+{
+	color: #255784;
+	background-color:#5df321 ;
+	box-shadow:  0 0 0.625rem #5df321,  0 0 2.5rem #5df321,  0 0 5rem #5df321 ;
+	transition-delay: 1s;
+}
+
+.pp a span{
+	position: absolute;
+	display: block;
+}
+.pp a span:nth-child(1){
+	top: 0;
+	left:-100%;
+	width: 100%;
+	height: 0.2rem;
+	background: linear-gradient(90deg,transparent,#5df321);
+}
+
+.pp a:hover span:nth-child(1){
+	left: 100%;
+	transition: 0.8s;
+}
+
+.pp a span:nth-child(3){
+	bottom: 0;
+	right:-100%;
+	width: 100%;
+	height: 0.2rem;
+	background: linear-gradient(90deg,transparent,#5df321);
+}
+
+.pp a:hover span:nth-child(3){
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.4s;
+}
+.pp a span:nth-child(2){
+	top: -100%;
+	right:0%;
+	width: 0.2rem;
+	height:100% ;
+	background: linear-gradient(180deg,transparent,#5df321);
+}
+
+.pp a:hover span:nth-child(2){
+	top: 100%;
+	transition: 1s;
+	transition-delay:0.2s;
+}
+
+.pp a span:nth-child(4){
+	bottom: -100%;
+	left:0%;
+	width: 0.2rem;
+	height:100% ;
+	background: linear-gradient(360deg,transparent,#5df321);
+}
+
+.pp a:hover span:nth-child(4){
+	bottom: 100%;
+	transition: 1s;
+	transition-delay:0.6s;
+}
+
+
+/* end of paragraph styling */
+
+/* form.html */
+.form-group{
+    margin-bottom: 1.2rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 1.2rem;
+	color: #000;
+}
+
+input, textarea,select{
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.2rem #ddd solid;
+	background: #ddd ;
+	text-transform: uppercase;
+}
+ textarea{
+    height:12.5rem ;
+	font-family: consolas;
+}
+input:focus, textarea:focus,select:focus{
+    outline: none;
+    border-color:#e715d6 ;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: rgb(23, 27, 221);
+    padding: 0.9rem 1.2rem;
+    border:none;
+    cursor:pointer;
+	width: 100%;
+}
+/* end of form */
+
 /* grids for the gallery */
 .contain {
 	width: 100%;
