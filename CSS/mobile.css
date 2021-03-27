@@ -68,6 +68,23 @@
 
 
     }
+    .countdown{
+        font-size: small;
+    }
+    .infor{
+        font-size: 1rem;
+    }
+    #days,#hours,#minutes,#seconds{
+        font-size: 1.5rem;
+    }
+    .colspin{
+        font-size: 1.2rem;
+        color:green;
+    }
+    .pp{
+        font-size: 1rem;
+        font-weight: bold;
+    }
     
 }
 

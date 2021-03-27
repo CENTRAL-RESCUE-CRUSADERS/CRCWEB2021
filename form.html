@@ -24,7 +24,7 @@
 			<img class="logo" src="images/MOI_logo.jpg" alt="Logo">
 			<h1> 
 				<marquee>
-					Feel free to contact us and share your views concerning the topics you would want to be preached next semister</marquee>
+					Feel free to contact us and share your views concerning our services</marquee>
 			</h1>
 		</header>
 		<nav class="nav menu-wrap" id="navbar">
@@ -48,6 +48,25 @@
 		</nav>
         <div class="container">
 			<section class="main">
+                <table class="countdown">
+                    <tr class="info">
+                        <td class="colspin" colspan="4">TIME LEFT TO MWENJE MISSION</td>
+                    </tr>
+                    <tr>
+                        <td >days</td>
+                        <td >hours</td>
+                        <td >minutes</td>
+                        <td >seconds</td>
+                    </tr>
+                    <tr class="info">
+                        <td id="days"></td>
+                        <td id="hours"></td>
+                        <td id="minutes"></td>
+                        <td id="seconds"></td>
+                    </tr>
+                    
+                </table>
+                <p class="pp">Central Rescue Crusaders Data Collection Form</p>
                 <form name="datacollection" method="POST" data-netlify="tue">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -55,15 +74,15 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email"required="please fill out this field"  name="email" id="email">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone number</label>
-                        <input type="tel" name="number" id="phone">
+                        <input type="tel"required="please fill out this field"  name="number" id="phone">
                     </div>
                     <div class="form-group">
                         <label for="year">Year of Study</label>
-                        <select name="year" id="yos">
+                        <select name="year"required="please fill out this field"  id="yos">
                             <option selected value="year">Select your year</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -74,12 +93,25 @@
                         </select>
                     </div>
                     <div class="form-group">
+                        <label for="year">Ministry</label>
+                        <select required="please fill out this field" name="ministry" id="ministry">
+                            <option selected value="ministry">Select your ministry</option>
+                            <option value="Praise and worship">Praise and worship</option>
+                            <option value="Intercessory">Intercessory</option>
+                            <option value="Catering">Catering</option>
+                            <option value="Technicians">Technicians</option>
+                            <option value="Instrumentalist">Instrumentalist</option>
+                            <option value="Ushering">Ushering</option>
+                            <option value="Children Ministry">Children Ministry</option>                            
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label for="residence">Place of residence</label>
-                        <input type="text" name="location" id="location">
+                        <input required="please fill out this field" type="text" name="location" id="location">
                     </div>
                     <div class="form-group">
                         <label for="message">What topics would you like to be preached next semister..</label>
-                        <textarea type="message" name="message" id="message"></textarea>
+                        <textarea required="please fill out this field"  type="message" name="message" id="message"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="mesage">What are some of the things you would like us to do to improve our services??</label>
@@ -126,6 +158,7 @@
             crossorigin="anonymous">
         </script> 
         <script src="javascript/main.js"></script>
+        <script src="javascript/containcontroller.js"></script>
     
     </body>
     </html>
