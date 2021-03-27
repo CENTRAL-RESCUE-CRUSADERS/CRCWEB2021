@@ -1,25 +1,33 @@
-const prevBttn = document.querySelector('.prev');	
-const nextBttn = document.querySelector('.next');
-const branch= document.querySelectorAll('.branch');
-let currentlySelected = 0;
+function countdown(){
+	let now =new Date();
+	let eventDate = new Date(2021, 4, 1,8 ,00);
 
-prevBttn.addEventListener('click', function(){
-	branch[currentlySelected].classList.remove(".active");
-	currentlySelected--;
-	branch[currentlySelected].classList.add(".active");
-	nextBttn.disabled= false;
+	let currentTime= now.getTime();
+	let eventTime = eventDate.getTime();
 
-	if (currentlySelected === 0){
-		prevBttn.disabled = true;
-	}
-});
-nextBttn.addEventListener('click', function(){
-	branch[currentlySelected].classList.remove(".active")
-	currentlySelected++;
-	branch[currentlySelected].classList.add(".active");
-	prevBttn.disabled= false;
+	let remTime= eventTime- currentTime;
+	let s= Math.floor(remTime/1000);
+	let m= Math.floor(s/60);
+	let h= Math.floor(m/60);
+	let d= Math.floor(h/24);
 
-	if (branch.length=== currentlySelected+ 1){
-		nextBttn.disabled = true;
-	}
-});
+
+    h%=24;
+    m%=60;
+    s%=60;
+
+    h= (h<10) ? "0"+ h: h;
+    m= (m<10) ? "0"+ m: m;
+    s= (s<10) ? "0"+ s: s;
+
+
+    document.getElementById("days").innerText=d;
+    document.getElementById("hours").innerText=h;
+    document.getElementById("minutes").innerText=m;
+    document.getElementById("seconds").innerText=s;
+
+    setTimeout(countdown,1000)
+    
+}
+
+countdown();

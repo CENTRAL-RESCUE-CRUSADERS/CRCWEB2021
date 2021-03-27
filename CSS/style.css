@@ -249,6 +249,28 @@ h2 {
 	padding: 0 1.5rem;
 }
 
+/* clock countdown style */
+
+.countdown{
+    text-align: center;
+    background-color: rgb(49, 24, 194);
+    border: solid 2px #999;
+    box-shadow: 0 20px 5px 3px rgb(204, 204, 204);
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+}
+
+.info{
+    font-size: 4rem;
+}
+
+.countdown:hover{
+    width:95%;
+    background-color: rgba(255, 0, 0, 0.39);
+    color:blue;
+}
+
+/* end of clock countdown */
 table {
 	width: 100%;
 	/* border: 0.5px solid rgb(198, 188, 255); */
