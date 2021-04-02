@@ -217,7 +217,51 @@
      }
 
 
+
+     /* ---------------------- Our Leaders ----------------------- */
+     .shadow-effect {
+        padding: 15px 0;
+    }
+    .shadow-effect p {
+        font-size: 1.1rem;
+    }
+    #testimonial .item {
+        padding: 10px;
+    }
+    .testimonials .container .shadow-effect h2 {
+        font-size: 1.3rem;
+    }
+    .testimonials .container .shadow-effect h3 {
+        font-size: 1.1rem;
+    }
+    #testimonial .testimonial-contact {
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+    }
+     /* ---------x------------- Our Leaders ---------x-------------- */
+
+/* ---------------------- Forms ----------------------- */
+     form .form {
+        margin: 5px 2%;
+        padding: 1rem;
+    }
     
+    label{
+        margin-bottom: 0.2rem;
+    }
+    input, textarea,select{
+        width: 100%;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    textarea{
+        height: 9rem;
+    }
+    button.btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+    /* ------------x---------- forms ------------x----------- */
 }
 /* End of footer and index */
 

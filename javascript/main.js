@@ -30,7 +30,25 @@ function myFunction() {
     navbar.classList.remove("navt");
   }
 }
-// sticky nav bar
+// Animate to move up
+$('.move-up a').on('click', function(event) {
+    if (this.hash !== ''){
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+            {
+                scrollTop: $(hash).offset().top - 100
+            },
+            1000
+        );
+    }
+});
+
+// Animate to move up
+
+
 
 // Read more and See less syntax
 $(document).on('click','#more' , function(){
