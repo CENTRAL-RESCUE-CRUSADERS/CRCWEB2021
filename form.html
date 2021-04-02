@@ -13,6 +13,7 @@
 	<link rel="icon" type="image/png" href="./images/favicon.png">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="stylesheet" media="(max-width:800px)" href="CSS/mobile.css">
 	<link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/humburger.css">
 </head>
@@ -23,9 +24,8 @@
 		<header class="main-header">
 			<img class="logo" src="images/MOI_logo.jpg" alt="Logo">
 			<h1> 
-				<marquee>
-					Feel free to contact us and share your views concerning our services</marquee>
-			</h1>
+				<marquee>Feel free to contact us and share your views concerning our services</marquee>
+			</h1> 
 		</header>
 		<nav class="nav menu-wrap" id="navbar">
 			<input type="checkbox" class="toggler">
@@ -68,56 +68,58 @@
                 </table> -->
                 <p class="pp">Central Rescue Crusaders Data Collection Form</p>
                 <form name="datacollection" method="POST" data-netlify="tue">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input autocomplete="off" type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input autocomplete="off" type="email" required="please fill out this field"  name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input autocomplete="off" type="tel" required="please fill out this field"  name="number" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year of Study</label>
+                            <select name="year"required="please fill out this field"  id="yos">
+                                <option selected value="year">Select your year</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="Elder">Elder</option>
+                                <option value="incoming">incoming</option>
+                                <option value="Associate">Associate</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Ministry</label>
+                            <select required="please fill out this field" name="ministry" id="ministry">
+                                <option selected value="ministry">Select your ministry</option>
+                                <option value="Praise and worship">Praise and worship</option>
+                                <option value="Intercessory">Intercessory</option>
+                                <option value="Catering">Catering</option>
+                                <option value="Technicians">Technicians</option>
+                                <option value="Instrumentalist">Instrumentalist</option>
+                                <option value="Ushering">Ushering</option>
+                                <option value="Children Ministry">Children Ministry</option>                            
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="residence">Place of residence</label>
+                            <input autocomplete="off" required="please fill out this field" type="text" name="location" id="location">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">What topics would you like to be preached next semister..</label>
+                            <textarea autocomplete="off" required="please fill out this field"  type="message" name="message" id="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="mesage">What are some of the things you would like us to do to improve our services??</label>
+                            <textarea autocomplete="off" type="mesage" name="mesage" id="mesage"></textarea>
+                        </div>
+                        <button class="btn" type="submit">submit</button>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email"required="please fill out this field"  name="email" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone number</label>
-                        <input type="tel"required="please fill out this field"  name="number" id="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="year">Year of Study</label>
-                        <select name="year"required="please fill out this field"  id="yos">
-                            <option selected value="year">Select your year</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="Elder">Elder</option>
-                            <option value="incoming">incoming</option>
-                            <option value="Associate">Associate</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="year">Ministry</label>
-                        <select required="please fill out this field" name="ministry" id="ministry">
-                            <option selected value="ministry">Select your ministry</option>
-                            <option value="Praise and worship">Praise and worship</option>
-                            <option value="Intercessory">Intercessory</option>
-                            <option value="Catering">Catering</option>
-                            <option value="Technicians">Technicians</option>
-                            <option value="Instrumentalist">Instrumentalist</option>
-                            <option value="Ushering">Ushering</option>
-                            <option value="Children Ministry">Children Ministry</option>                            
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="residence">Place of residence</label>
-                        <input required="please fill out this field" type="text" name="location" id="location">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">What topics would you like to be preached next semister..</label>
-                        <textarea required="please fill out this field"  type="message" name="message" id="message"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="mesage">What are some of the things you would like us to do to improve our services??</label>
-                        <textarea type="mesage" name="mesage" id="mesage"></textarea>
-                    </div>
-                    <button class="btn" type="submit">submit</button>
                 </form>
 			</section>
 		</div>
@@ -126,39 +128,39 @@
 
 
 
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="theme">
-                    Central Rescue Crusaders-MUCU MC Christ Our Firm Foundation
-                </div>
-                <div class="contact">
-                    Contact Us:
-                </div>
-                <ul class="list"> 
-                    <li class="li ph"><a href="tel:+254 743 575792"><i class="fa fa-phone fa-fs"></i>call us</a></li>
-                    <span class="i"></span>
-                    <li class="li fb" id="large-screen"><a target="_blank" href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
-                    <li class="li fb"><a id="small-screen" target="_blank" href="fb://https://www.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
-                    <span class="i"></span>
-                    <li class="li em"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=moiunicrc@gmail.com" target="_blank"><i class="fa fa-envelope fa-fs"></i>moiunicrc@gmail.com</a></li>
-                    <span class="i"></span>
-                    <li class="li yt"><a href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw"><i class="fab fa-youtube fa-fs"></i>Central Rescue Crusaders</a></li>
-                </ul>
-                <!-- "mailto:email@example.com?subject=Mail from our Website" -->
-                <div class="copy">
-                    Website made with love for CRC by CRC <br>
-                    copyright&copy;2021 all rights reserved
-                </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="theme">
+                Central Rescue Crusaders-MUCU MC Christ Our Firm Foundation
             </div>
-        </footer>
-    
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous">
-        </script> 
-        <script src="javascript/main.js"></script>
-        <script src="javascript/containcontroller.js"></script>
-    
-    </body>
-    </html>
+            <div class="contact">
+                Contact Us:
+            </div>
+            <ul class="list"> 
+                <li class="li ph"><a href="tel:+254 743 575792"><i class="fa fa-phone fa-fs"></i>call us</a></li>
+                <span class="i"></span>
+                <li class="li fb" id="large-screen"><a target="_blank" href="https://web.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
+                <li class="li fb"><a id="small-screen" target="_blank" href="fb://https://www.facebook.com/crc.moicu"><i class="fab fa-facebook fa-fs"></i> CRCMoiCU</a></li>
+                <span class="i"></span>
+                <li class="li em"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=moiunicrc@gmail.com" target="_blank"><i class="fa fa-envelope fa-fs"></i>moiunicrc@gmail.com</a></li>
+                <span class="i"></span>
+                <li class="li yt"><a href="https://www.youtube.com/channel/UCpiK2UTFt4kY2k9e63kvVaw"><i class="fab fa-youtube fa-fs"></i>Central Rescue Crusaders</a></li>
+            </ul>
+            <!-- "mailto:email@example.com?subject=Mail from our Website" -->
+            <div class="copy">
+                Website made with love for CRC by CRC <br>
+                copyright&copy;2021 all rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script> 
+    <script src="javascript/main.js"></script>
+    <script src="javascript/containcontroller.js"></script>
+
+</body>
+</html>
