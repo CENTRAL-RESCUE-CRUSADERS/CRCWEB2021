@@ -1,8 +1,9 @@
 * {
 	box-sizing: border-box;
+	/* line-height: 1.25rem; */
 }
 
-/* Utilities */
+/* Utilities */  
 
 .btn-1 {
 	margin: 0.3rem;
@@ -73,7 +74,7 @@ a {
 	padding-left: 20px;
 }
 
-/* Add a card effect */
+/* -------------------- Add a card effect  ----------------------- */
 .leftcolumn .cards {
 	background-color: rgba(226, 224, 253, 0.6);
 	padding: 20px;
@@ -113,21 +114,27 @@ a {
 .card {
 	background-color: rgba(231, 218, 248, 0.5);
 	width: 100%;
+	font-size: 1.2rem;
+	line-height: 1.75rem;
 	padding: 1rem;
+	border-radius: 10px;
 	margin-bottom: 1rem;
+	border: 1px solid #ececec;
 }
 .card .title,
 .event .title {
-	font-size: 0.9rem;
-	padding: 0.25rem;
+	font-size: 1rem;
+	padding: 0.25rem 0.4rem;
 	border-radius: 10px;
-	background: rgb(87, 87, 243);
+	background: rgb(11, 11, 255);
 	color: rgb(238, 237, 248);
 	cursor: pointer;
+	text-transform: uppercase;
+	width: fit-content;
 }
 .card .title:hover,
 .event .title:hover {
-	background: rgba(87, 87, 243, 0.8);
+	background: rgba(11, 11, 255, 0.8);
 }
 .card p {
 	padding-top: 0.5rem;
@@ -136,7 +143,38 @@ a {
 	display: block;
 	overflow: hidden;
 }
-/* Cards, Read more and less syntax */
+.card .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+	flex-direction: row;
+	border-radius: 5px;
+	margin-bottom: 0.25rem;
+	font-family: 'Arvo', serif;
+}
+.card .top {
+	border-bottom: 1px solid #ececec;	
+	background: linear-gradient(0deg, rgba(238, 238, 238, 0.2), rgb(255, 255, 255));
+}
+.card .bottom {
+	padding-top: 1rem;
+	border-top: 1px solid #ececec;
+	background: linear-gradient(180deg, rgba(238, 238, 238, 0.2), rgb(255, 255, 255));
+}
+.card .meta .author {
+	font-size: 1rem;
+}
+.card .meta i {
+	padding-right: 0.2rem;
+}
+
+.card .meta .category {
+    margin-top: 0.4rem;
+}
+
+
+/* ----------------------- Read more and less ------------------------ */
 .read {
 	background: rgba(87, 87, 243, 0.1);
 	padding: 0.3rem;
