@@ -4,7 +4,6 @@
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
 	list-style: none;
-
     box-sizing: border-box;
 
 }
@@ -61,6 +60,10 @@ h2 {
 }
 h3 {
  color: #5E001F;
+}
+.au {
+	color: #5E001F;
+	font-weight: bold;
 }
   /* end of read more/less utils */
 
