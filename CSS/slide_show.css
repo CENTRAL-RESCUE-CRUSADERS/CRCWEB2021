@@ -53,6 +53,9 @@
 #testimonial .testimonial-contact i{
     padding-left: 1rem;
 }
+#testimonial .testimonial-contact li a {
+    color: #fff;
+}
 .testimonials .container .leaders {
     padding: 1rem 0;
     margin: 1rem 0;
